@@ -1,0 +1,67 @@
+Test de 47 URLs RSS...
+================================================================================
+
+=== LFI ===
+  [OK ] frustration               ( 25 articles)     Frustration Magazine
+  [OK ] lfi-officiel              ( 30 articles)     La France insoumise
+  [OK ] linsoumission             (100 articles)     L'insoumission
+  [OK ] lvsl                      ( 10 articles)     lvsl.fr – Le Vent Se Lève
+  [OK ] melenchon-blog            ( 10 articles)     Jean-Luc Mélenchon Le blog
+  [FAIL] le-media                                     bozo: <unknown>:2:0: syntax error
+  [FAIL] le-media-alt                                 bozo: <unknown>:2:0: syntax error
+  [FAIL] politis                                      bozo: <unknown>:90:16: not well-formed (invalid token)
+
+=== GAUCHE ===
+  [OK ] alternatives-eco          ( 10 articles)     Alternatives Economiques
+  [OK ] humanite-alt              ( 20 articles)     L'Humanité
+  [OK ] mediapart                 ( 10 articles)     Mediapart
+  [OK ] regards                   ( 10 articles)     Regards.fr
+  [OK ] streetpress               ( 20 articles)     StreetPress | Le magazine urbain
+  [FAIL] blast                                        HTTP 404
+  [FAIL] blast-alt                                    HTTP 404
+  [FAIL] humanite                                     HTTP 404
+  [FAIL] marianne                                     HTTP 403
+  [FAIL] marianne-alt                                 HTTP 403
+  [FAIL] politis-g                                    bozo: <unknown>:90:16: not well-formed (invalid token)
+
+=== ECONOMIE ===
+  [OK ] alternatives-eco-e        ( 10 articles)     Alternatives Economiques
+  [OK ] attac                     ( 10 articles)     Attac France
+  [OK ] contretemps               ( 10 articles)     Contretemps
+  [OK ] frustration-e             ( 25 articles)     Frustration Magazine
+  [OK ] monde-diplo               ( 20 articles)     Le Monde diplomatique
+  [OK ] monde-diplo-alt           ( 20 articles)     Le Monde diplomatique
+  [FAIL] alternatives-libe                            ConnectionError: HTTPSConnectionPool(host='www.alterlibertaire.fr', port=443): M
+  [FAIL] contre-coups                                 ConnectionError: HTTPSConnectionPool(host='contre-coups.com', port=443): Max ret
+
+=== ECOLOGIE ===
+  [OK ] basta                     ( 10 articles)     Basta!
+  [OK ] basta-alt                 ( 10 articles)     Basta!
+  [OK ] bonpote                   ( 10 articles)     Bon Pote
+  [OK ] nfa-eco                   ( 40 articles)     Le Nouvel Obs - EcoloObs
+  [OK ] reporterre                ( 60 articles)     Reporterre, le média de l'écologie - Indépendant et en accès libre
+  [OK ] vert                      ( 10 articles)     Vert
+  [OK ] vert-alt                  ( 10 articles)     Vert
+  [FAIL] basta-alt2                                   HTTP 403
+  [FAIL] liberation-eco                               HTTP 502
+  [FAIL] reporterre-alt                               HTTP 404
+
+=== INTERNATIONAL ===
+  [OK ] afrique-xxi               (  0 articles)     Afrique XXI
+  [OK ] afrique-xxi-alt           (  0 articles)     Afrique XXI
+  [OK ] contretemps-i             ( 10 articles)     Contretemps
+  [OK ] courrier-int              ( 20 articles)     Courrier international - Actualités France et Monde, vidéos, infographies
+  [OK ] liberation-int            ( 50 articles)     Libération
+  [OK ] monde-diplo-i             ( 20 articles)     Le Monde diplomatique
+  [OK ] orient-xxi                (  0 articles)     Orient XXI
+  [OK ] rfi-france                ( 30 articles)     L'actualité économique et politique en France - RFI
+  [OK ] rfi-monde                 ( 30 articles)     L'actualité économique et politique dans le monde en direct - RFI
+  [FAIL] orient-xxi-alt                               HTTP 404
+
+================================================================================
+RECAP : sources OK par categorie
+  lfi             :  5 OK / 5 cible  [OK]
+  gauche          :  5 OK / 5 cible  [OK]
+  economie        :  6 OK / 5 cible  [OK]
+  ecologie        :  7 OK / 5 cible  [OK]
+  international   :  9 OK / 5 cible  [OK]

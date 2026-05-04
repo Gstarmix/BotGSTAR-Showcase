@@ -1,0 +1,338 @@
+# Configuration des mots-clés de scoring pour la VEILLE POLITIQUE (Option C)
+# Format YAML — éditable manuellement, rechargé via !veille_pol reload
+#
+# Deux types de mots-clés :
+# - boost : un article qui matche reçoit +500 points par match
+#           (les articles "boostés" remontent dans le tri)
+# - blacklist : un article qui matche est REJETÉ (filtre dur)
+#
+# Matching : insensible à la casse, recherche dans titre + summary
+# Multi-mots : les espaces dans une entrée signifient "ces mots
+#              apparaissent dans cet ordre"
+#
+# Section "all" : s'applique à toutes les catégories (anti-pubs).
+
+all:
+  boost: []
+  blacklist:
+  - sponsorisé
+  - publi-rédactionnel
+  - publicité
+  - horoscope
+  - people
+  - promo
+  - advertorial
+  - sponsored
+  - bons plans
+  - code promo
+
+# ============================================================
+# 🔥 ACTU-CHAUDE — Boost sur l'actu chaude / breaking
+# ============================================================
+actu-chaude:
+  boost:
+  - alerte
+  - urgent
+  - breaking
+  - exclusif
+  - enquête
+  - dossier
+  - décryptage
+  - en direct
+  - tribune
+  - réforme
+  - assemblée nationale
+  - conseil constitutionnel
+  - macronie
+  blacklist:
+  - sport
+  - foot
+  - tennis
+  - rugby
+  - tour de france
+  - célébrité
+
+# ============================================================
+# 💰 ARSENAL-ECO — Inégalités, fiscalité, pouvoir d'achat
+# ============================================================
+arsenal-eco:
+  boost:
+  - inégalités
+  - patrimoine
+  - milliardaires
+  - fortune
+  - super-riches
+  - oligarchie
+  - SMIC
+  - salaire minimum
+  - retraite
+  - système de retraite
+  - 64 ans
+  - 62 ans
+  - réforme des retraites
+  - fiscalité
+  - impôt sur la fortune
+  - ISF
+  - CSG
+  - flat tax
+  - redistribution
+  - néolibéralisme
+  - austérité
+  - dette publique
+  - dette
+  - BCE
+  - FMI
+  - banque centrale
+  - inflation
+  - pouvoir d'achat
+  - chômage
+  - financiarisation
+  - capitalisme
+  - actionnaire
+  - dividende
+  - CAC 40
+  - LVMH
+  - Bernard Arnault
+  - exonération
+  - cadeau fiscal
+  - bouclier fiscal
+  blacklist:
+  - sponsorisé
+
+# ============================================================
+# 🌱 ARSENAL-ECOLOGIE — Climat, ZAD, énergie
+# ============================================================
+arsenal-ecologie:
+  boost:
+  - climat
+  - réchauffement
+  - réchauffement climatique
+  - écologie
+  - biodiversité
+  - carbone
+  - GIEC
+  - transition énergétique
+  - énergie fossile
+  - pétrole
+  - gaz
+  - charbon
+  - nucléaire
+  - renouvelable
+  - éolien
+  - solaire
+  - déforestation
+  - pollution
+  - ZAD
+  - Sainte-Soline
+  - bassine
+  - mégabassines
+  - agriculture intensive
+  - permaculture
+  - agroécologie
+  - artificialisation
+  - sécheresse
+  - canicule
+  - extinction
+  - effondrement
+  - Total Energies
+  - Bayer
+  - Monsanto
+  - pesticides
+  - glyphosate
+  - néonicotinoïdes
+  blacklist:
+  - sponsorisé
+
+# ============================================================
+# 🌍 ARSENAL-INTERNATIONAL — Palestine, Russie, USA, Sahel…
+# ============================================================
+arsenal-international:
+  boost:
+  - Palestine
+  - Gaza
+  - Israël
+  - sionisme
+  - génocide
+  - BDS
+  - Cisjordanie
+  - colon israélien
+  - Hamas
+  - Ukraine
+  - Russie
+  - Poutine
+  - OTAN
+  - États-Unis
+  - USA
+  - Trump
+  - Biden
+  - Chine
+  - Xi Jinping
+  - BRICS
+  - extrême droite
+  - fasciste
+  - néofascisme
+  - néofasciste
+  - Sahara occidental
+  - Soudan
+  - Yémen
+  - Iran
+  - Liban
+  - Syrie
+  - Maroc
+  - Algérie
+  - Tunisie
+  - Burkina Faso
+  - Mali
+  - Niger
+  - Françafrique
+  - décolonisation
+  - guerre
+  - conflit
+  - cessez-le-feu
+  - ONU
+  - droit international
+  - Cour pénale internationale
+  blacklist:
+  - sponsorisé
+
+# ============================================================
+# ✊ ARSENAL-SOCIAL — Luttes, syndicats, mobilisations
+# ============================================================
+arsenal-social:
+  boost:
+  - syndicat
+  - CGT
+  - SUD
+  - FSU
+  - Solidaires
+  - FO
+  - Unsa
+  - manifestation
+  - manif
+  - grève
+  - mobilisation
+  - mouvement social
+  - mouvement populaire
+  - luttes sociales
+  - antifa
+  - antifasciste
+  - autonome
+  - libertaire
+  - anarchiste
+  - écosocialisme
+  - extrême gauche
+  - communiste
+  - PCF
+  - EELV
+  - écologiste
+  - violences policières
+  - répression
+  - répression policière
+  - Gilets Jaunes
+  - black bloc
+  - ZAD
+  - occupation
+  - blocage
+  - quartier populaire
+  - banlieue
+  - racisme
+  - antiracisme
+  - islamophobie
+  - LGBT
+  - LGBTQI
+  - transphobie
+  - féminisme
+  - sexisme
+  - violences sexistes
+  - violences sexuelles
+  blacklist:
+  - sponsorisé
+
+# ============================================================
+# 🎯 ARSENAL-ATTAQUES — Réplique pro-LFI / contre-narratif
+# ============================================================
+arsenal-attaques:
+  boost:
+  - LFI
+  - France Insoumise
+  - Mélenchon
+  - Jean-Luc Mélenchon
+  - Mathilde Panot
+  - Manuel Bompard
+  - Manon Aubry
+  - Clémence Guetté
+  - Eric Coquerel
+  - Aurélien Saintoul
+  - Sophia Chikirou
+  - Antoine Léaument
+  - Louis Boyard
+  - NUPES
+  - Union Populaire
+  - Front Populaire
+  - Nouveau Front Populaire
+  - NFP
+  - insoumis
+  - insoumise
+  - extrême gauche
+  - radicalité
+  - radical
+  - groupe parlementaire
+  - parlement européen LFI
+  - tribune
+  - intervention assemblée
+  - question au gouvernement
+  - censure
+  - motion de censure
+  - 49.3
+  - dissolution
+  blacklist:
+  - sponsorisé
+
+# ============================================================
+# 📺 ARSENAL-MEDIAS — Critique média, fact-check, désinfo
+# ============================================================
+arsenal-medias:
+  boost:
+  - désinformation
+  - fact-check
+  - fact checking
+  - fake news
+  - bobard
+  - manipulation
+  - biais médiatique
+  - narratif
+  - Bolloré
+  - Vincent Bolloré
+  - Vivendi
+  - CNEWS
+  - C8
+  - Hanouna
+  - Pascal Praud
+  - concentration média
+  - oligarques
+  - Niel
+  - Drahi
+  - Lagardère
+  - Le Monde
+  - propriété médias
+  - presse écrite
+  - audiovisuel
+  - service public
+  - France Télévisions
+  - Radio France
+  - éditorialiste
+  - Pujadas
+  - Apolline de Malherbe
+  - Léa Salamé
+  - Patrick Cohen
+  - Yves Calvi
+  - censure
+  - autocensure
+  - liberté de la presse
+  - reporter
+  - journalisme
+  - investigation
+  - Acrimed
+  - Reporters sans frontières
+  blacklist:
+  - sponsorisé

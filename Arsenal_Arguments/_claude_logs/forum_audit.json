@@ -1,0 +1,128 @@
+[
+  {
+    "name": "politique-française",
+    "id": "1499086791355928747",
+    "active": 198,
+    "archived": 100,
+    "total": 298
+  },
+  {
+    "name": "économie-et-social",
+    "id": "1499086462271098932",
+    "active": 173,
+    "archived": 100,
+    "total": 273
+  },
+  {
+    "name": "société-et-médias",
+    "id": "1499086699102339113",
+    "active": 141,
+    "archived": 0,
+    "total": 141
+  },
+  {
+    "name": "ia-et-technologie",
+    "id": "1499089333922304131",
+    "active": 65,
+    "archived": 0,
+    "total": 65
+  },
+  {
+    "name": "histoire-et-géopolitique",
+    "id": "1499094432190828624",
+    "active": 51,
+    "archived": 0,
+    "total": 51
+  },
+  {
+    "name": "international-et-solidarités",
+    "id": "1499087836790390875",
+    "active": 48,
+    "archived": 0,
+    "total": 48
+  },
+  {
+    "name": "religions-et-philosophie",
+    "id": "1499266538765811804",
+    "active": 46,
+    "archived": 0,
+    "total": 46
+  },
+  {
+    "name": "justice-et-libertés",
+    "id": "1499088801383973045",
+    "active": 25,
+    "archived": 0,
+    "total": 25
+  },
+  {
+    "name": "féminisme-et-luttes",
+    "id": "1499093314786426971",
+    "active": 23,
+    "archived": 0,
+    "total": 23
+  },
+  {
+    "name": "social-et-logement",
+    "id": "1499087652840931442",
+    "active": 20,
+    "archived": 0,
+    "total": 20
+  },
+  {
+    "name": "culture-et-éducation",
+    "id": "1499086594227966024",
+    "active": 18,
+    "archived": 0,
+    "total": 18
+  },
+  {
+    "name": "écologie-et-climat",
+    "id": "1499088636782711075",
+    "active": 14,
+    "archived": 0,
+    "total": 14
+  },
+  {
+    "name": "catégorie-libre",
+    "id": "1499089647630946305",
+    "active": 9,
+    "archived": 0,
+    "total": 9
+  },
+  {
+    "name": "campagne-2027",
+    "id": "1499270885482303630",
+    "active": 6,
+    "archived": 0,
+    "total": 6
+  },
+  {
+    "name": "débats-et-rhétorique",
+    "id": "1499261562752602224",
+    "active": 1,
+    "archived": 0,
+    "total": 1
+  },
+  {
+    "name": "éducation",
+    "id": "1499308679487553536",
+    "active": 1,
+    "archived": 0,
+    "total": 1
+  },
+  {
+    "name": "social-et-médias",
+    "id": "1499316141712080947",
+    "active": 1,
+    "archived": 0,
+    "total": 1
+  },
+  {
+    "name": "société-et-éducation",
+    "id": "1499353554740056065",
+    "active": 1,
+    "archived": 0,
+    "total": 1
+  }
+]

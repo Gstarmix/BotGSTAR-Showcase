@@ -1,0 +1,2551 @@
+{
+  "schema_version": 1,
+  "published": {
+    "78509ff0e29dd30b7952b200c99f499b": {
+      "source_id": "journalduhacker",
+      "title": "Rendre Raspberry Pi OS utilisable sur un Pi 0 W",
+      "url": "https://richard-dern.fr/interets/informatique/2026/04/26/rendre-raspberry-pi-os-utilisable-sur-un-pi-0-w/",
+      "category": "dev",
+      "published_at": "2026-04-25T20:35:44+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "6c45fa205ae05b0dbddc424e28f07917": {
+      "source_id": "journalduhacker",
+      "title": "Configurer votre éditeur Zed sur le bout des doigts",
+      "url": "https://blog.seboss666.info/2026/04/configurer-votre-editeur-zed-sur-le-bout-des-doigts/",
+      "category": "dev",
+      "published_at": "2026-04-25T19:07:16+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "0df034680b221950784df8b88b7e7d60": {
+      "source_id": "stackoverflow-blog",
+      "title": "Lights, camera, open source!",
+      "url": "https://stackoverflow.blog/2026/04/24/lights-camera-open-source/",
+      "category": "dev",
+      "published_at": "2026-04-24T06:40:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "8f13b8150d9ec5bb5026af578791cb8c": {
+      "source_id": "stackoverflow-blog",
+      "title": "Black box AI drift: AI tools are making design decisions nobody asked for",
+      "url": "https://stackoverflow.blog/2026/04/23/black-box-ai-drift-ai-tools-are-making-design-decisions-nobody-asked-for/",
+      "category": "dev",
+      "published_at": "2026-04-23T13:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "dfc4c94da671341f80374e30af5ca7fd": {
+      "source_id": "realpython",
+      "title": "The Real Python Podcast – Episode #292: Becoming a Better Python Developer Through Learning Rust",
+      "url": "https://realpython.com/podcasts/rpp/292/",
+      "category": "dev",
+      "published_at": "2026-04-24T11:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "fc644f38c51e5df08147e32025641751": {
+      "source_id": "realpython",
+      "title": "Quiz: AI Coding Agents Guide: A Map of the Four Workflow Types",
+      "url": "https://realpython.com/quizzes/ai-coding-agents-guide/",
+      "category": "dev",
+      "published_at": "2026-04-24T11:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "4851770f82154f543e230091a50f1551": {
+      "source_id": "journalduhacker",
+      "title": "La documentation technique n'est pas une corvée",
+      "url": "https://ugodimini.substack.com/p/mental-model-3-la-documentation-est",
+      "category": "dev",
+      "published_at": "2026-04-25T07:48:25+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "31916a09889970fc7cca41f4519b522a": {
+      "source_id": "journalduhacker",
+      "title": "Qu'est-ce que le fine-tuning ?",
+      "url": "https://ai-explorer.io/quest-ce-que-le-fine-tuning-guide-complet-2026/",
+      "category": "dev",
+      "published_at": "2026-04-24T22:57:10+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "30c1332c4ee0edb285063742eddfbc9a": {
+      "source_id": "journalduhacker",
+      "title": "Firefox 150 : Vue scindée, traduction en local et gestion des PDF améliorées !",
+      "url": "https://tugaleres.com/2026/04/24/firefox-150-vue-scindee-traduction-en-local-et-gestion-des-pdf-ameliorees/",
+      "category": "dev",
+      "published_at": "2026-04-24T15:30:56+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "be1736527458d944e22c74906a96c0a6": {
+      "source_id": "journalduhacker",
+      "title": "Veille #53 - les 61 actus qu'il ne fallait pas rater cette semaine",
+      "url": "https://www.camilleroux.com/veille-53-lactu-de-la-semaine/",
+      "category": "dev",
+      "published_at": "2026-04-24T12:40:23+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863986564038818"
+    },
+    "eb2ba00234ce06127367d74b78f3e3ab": {
+      "source_id": "numerama",
+      "title": "C’est le grand embouteillage des nouvelles marques électriques et cela commence à lasser",
+      "url": "https://www.numerama.com/vroom/2240727-cest-le-grand-embouteillage-des-nouvelles-marques-electriques-et-cela-commence-a-lasser.html",
+      "category": "tech",
+      "published_at": "2026-04-26T05:42:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "03d4edce1bca80fb5d8709356d802fe2": {
+      "source_id": "numerama",
+      "title": "Le trailer épique de la Bataille de Gaulle, ChatGPT vs Gemini et saison 3 des Anneaux de pouvoir – le récap’ de la semaine",
+      "url": "https://www.numerama.com/tech/2240631-le-trailer-epique-de-la-bataille-de-gaulle-chatgpt-vs-gemini-et-saison-3-des-anneaux-de-pouvoir-le-recap-de-la-semaine.html",
+      "category": "tech",
+      "published_at": "2026-04-26T04:22:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "3349d7b413626c664e3c32991d18de84": {
+      "source_id": "numerama",
+      "title": "J’ai échangé mon fidèle combo clavier-souris pour tester la manette ultime sur PC",
+      "url": "https://www.numerama.com/tech/2239169-jai-echange-mon-fidele-combo-clavier-souris-pour-tester-la-manette-ultime-sur-pc.html",
+      "category": "tech",
+      "published_at": "2026-04-25T15:31:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "57aa410c1a5e5eb207aab6108c17fcd8": {
+      "source_id": "numerama",
+      "title": "Quels sont les pires films de zombies de l’histoire du cinéma ?",
+      "url": "https://www.numerama.com/pop-culture/2237457-quels-sont-les-pires-films-de-zombies-de-lhistoire-du-cinema.html",
+      "category": "tech",
+      "published_at": "2026-04-25T14:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "a396a26f7472cc6a6445b823afa37712": {
+      "source_id": "numerama",
+      "title": "« Tout portait à croire que c’était réglo », on vous raconte l’arnaque à l’IBAN qui piège les vendeurs Leboncoin",
+      "url": "https://www.numerama.com/cyberguerre/2238445-tout-portait-a-croire-que-cetait-reglo-on-vous-raconte-larnaque-a-liban-qui-piege-les-vendeurs-leboncoin.html",
+      "category": "tech",
+      "published_at": "2026-04-25T12:27:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "bbfb154754ecd9f286c86fc8496c3fcb": {
+      "source_id": "numerama",
+      "title": "Une voiture sur cinq était électrique en mars en Europe : une croissance visible enfin dans tous les pays",
+      "url": "https://www.numerama.com/vroom/2240665-une-voiture-sur-cinq-etait-electrique-en-mars-en-europe-une-croissance-visible-enfin-dans-tous-les-pays.html",
+      "category": "tech",
+      "published_at": "2026-04-25T11:02:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "31932b0e981160b8b652bc2df188dff3": {
+      "source_id": "numerama",
+      "title": "Où précommander le remake Assassin’s Creed Black Flag Resynced au meilleur prix ?",
+      "url": "https://www.numerama.com/pop-culture/2240329-ou-precommander-le-remake-assassins-creed-black-flag-resynced-au-meilleur-prix.html",
+      "category": "tech",
+      "published_at": "2026-04-25T09:47:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "7c766459f1c941331c66265181ef7c7b": {
+      "source_id": "numerama",
+      "title": "Les coulisses de la vidéo de présentation du MacBook Neo sont incroyables",
+      "url": "https://www.numerama.com/tech/2240789-les-coulisses-de-la-video-de-presentation-du-macbook-neo-sont-incroyables.html",
+      "category": "tech",
+      "published_at": "2026-04-25T09:11:57+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "4a88d84ea1c88cd1deb480590fa5c086": {
+      "source_id": "numerama",
+      "title": "Les propriétaires d’une Switch 2 vont pouvoir découvrir l’un des meilleurs MMORPG",
+      "url": "https://www.numerama.com/pop-culture/2240779-les-proprietaires-dune-switch-2-vont-pouvoir-decouvrir-lun-des-meilleurs-mmorpg.html",
+      "category": "tech",
+      "published_at": "2026-04-25T07:46:15+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "ac56104cc40d986f27986ed65e19be74": {
+      "source_id": "next-ink",
+      "title": "#Flock : la tactique du parasite",
+      "url": "https://next.ink/235458/flock-la-tactique-du-parasite/",
+      "category": "tech",
+      "published_at": "2026-04-25T10:37:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863989189935154"
+    },
+    "3aa1538062afe16ed61b2be110440d61": {
+      "source_id": "openai-news",
+      "title": "Introducing GPT-5.5",
+      "url": "https://openai.com/index/introducing-gpt-5-5",
+      "category": "ia",
+      "published_at": "2026-04-23T10:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "915b6ff115f0885dca2ea04c60c1489a": {
+      "source_id": "openai-news",
+      "title": "GPT-5.5 System Card",
+      "url": "https://openai.com/index/gpt-5-5-system-card",
+      "category": "ia",
+      "published_at": "2026-04-23T10:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "6e517fdbc3294cba69025a9663bb4654": {
+      "source_id": "openai-news",
+      "title": "Automations",
+      "url": "https://openai.com/academy/codex-automations",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "fce4054495654cee1984ffb313457e56": {
+      "source_id": "openai-news",
+      "title": "Top 10 uses for Codex at work",
+      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "79ea493d001a2d4e7d9ec7d5e2eb6d97": {
+      "source_id": "openai-news",
+      "title": "Plugins and skills",
+      "url": "https://openai.com/academy/codex-plugins-and-skills",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "df10955916ed573f62727d93cf1fa05b": {
+      "source_id": "openai-news",
+      "title": "Working with Codex",
+      "url": "https://openai.com/academy/working-with-codex",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "d363d492e8c4b2f01b785335d25b1a14": {
+      "source_id": "openai-news",
+      "title": "Codex settings",
+      "url": "https://openai.com/academy/codex-settings",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "c476e67cc64bdc2249ee69641290ee6e": {
+      "source_id": "openai-news",
+      "title": "What is Codex?",
+      "url": "https://openai.com/academy/what-is-codex",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "afb218f7b48cb0e3bbd78698e9dbeaac": {
+      "source_id": "openai-news",
+      "title": "How to get started with Codex",
+      "url": "https://openai.com/academy/codex-how-to-start",
+      "category": "ia",
+      "published_at": "2026-04-23T09:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "807d3648751f932d947e436a25dfd535": {
+      "source_id": "huggingface-blog",
+      "title": "DeepSeek-V4: a million-token context that agents can actually use",
+      "url": "https://huggingface.co/blog/deepseekv4",
+      "category": "ia",
+      "published_at": "2026-04-23T23:00:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863991769432135"
+    },
+    "a777fd6c5b698a8bb86534128cf34eb0": {
+      "source_id": "bleepingcomputer",
+      "title": "Threat actor uses Microsoft Teams to deploy new “Snow” malware",
+      "url": "https://www.bleepingcomputer.com/news/security/threat-actor-uses-microsoft-teams-to-deploy-new-snow-malware/",
+      "category": "cyber",
+      "published_at": "2026-04-25T14:07:44+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "d1f9a1a38306e874781e2a1e02623c69": {
+      "source_id": "bleepingcomputer",
+      "title": "Firestarter malware survives Cisco firewall updates, security patches",
+      "url": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches/",
+      "category": "cyber",
+      "published_at": "2026-04-24T19:34:08+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "2bca4b99b81b847b8e5e4c723395aa2a": {
+      "source_id": "bleepingcomputer",
+      "title": "Hackers exploit file upload bug in Breeze Cache WordPress plugin",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-file-upload-bug-in-breeze-cache-wordpress-plugin/",
+      "category": "cyber",
+      "published_at": "2026-04-23T20:33:45+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "03e32d5cdc280d358c92c98e81687ca8": {
+      "source_id": "hackernews-cyber",
+      "title": "FIRESTARTER Backdoor Hit Federal Cisco Firepower Device, Survives Security Patches",
+      "url": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+      "category": "cyber",
+      "published_at": "2026-04-24T16:06:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "c6c6339dccbdc6828ad5c64328ec6bc6": {
+      "source_id": "hackernews-cyber",
+      "title": "LMDeploy CVE-2026-33626 Flaw Exploited Within 13 Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+      "category": "cyber",
+      "published_at": "2026-04-24T06:24:00+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "75f123b0fe68ab35f26dc270cc767f52": {
+      "source_id": "bleepingcomputer",
+      "title": "ADT confirms data breach after ShinyHunters leak threat",
+      "url": "https://www.bleepingcomputer.com/news/security/adt-confirms-data-breach-after-shinyhunters-leak-threat/",
+      "category": "cyber",
+      "published_at": "2026-04-24T21:53:14+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "f96737237921295d9946f53850347898": {
+      "source_id": "bleepingcomputer",
+      "title": "Windows Update gets new controls to reduce forced restarts",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-update-gets-new-controls-to-reduce-forced-restarts/",
+      "category": "cyber",
+      "published_at": "2026-04-24T19:08:26+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "9927f88026e3daea3c0cfe11557952b0": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft to roll out Entra passkeys on Windows in late April",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-roll-out-entra-passkeys-on-windows-in-late-april/",
+      "category": "cyber",
+      "published_at": "2026-04-24T17:13:55+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "b093a7496afc15af2b7531e3d89399d1": {
+      "source_id": "bleepingcomputer",
+      "title": "New ‘Pack2TheRoot’ flaw gives hackers root Linux access",
+      "url": "https://www.bleepingcomputer.com/news/security/new-pack2theroot-flaw-gives-hackers-root-linux-access/",
+      "category": "cyber",
+      "published_at": "2026-04-24T16:28:46+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "77778f72f462500f6cc5949d7b6fe31c": {
+      "source_id": "bleepingcomputer",
+      "title": "Over 10,000 Zimbra servers vulnerable to ongoing XSS attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-says-zimbra-flaw-now-exploited-over-10k-servers-vulnerable/",
+      "category": "cyber",
+      "published_at": "2026-04-24T12:35:33+00:00",
+      "posted_at": "2026-04-26T07:36:42.228990+00:00",
+      "message_id": "1497863994348671107"
+    },
+    "c96fedbf3ec066307bb94c2473bd670a": {
+      "source_id": "numerama",
+      "title": "L’usage du téléphone au volant entraînera la suspension immédiate du permis dans certains départements",
+      "url": "https://www.numerama.com/politique/2240883-lusage-du-telephone-au-volant-entrainera-la-suspension-immediate-du-permis-dans-certains-departements.html",
+      "category": "tech",
+      "published_at": "2026-04-27T07:27:59+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "cb679ef5f2fd80159461abf5bc4516ee": {
+      "source_id": "numerama",
+      "title": "Après le succès de Battlefield 6, Hollywood prépare enfin l’adaptation ultime",
+      "url": "https://www.numerama.com/pop-culture/2240889-apres-le-succes-de-battlefield-6-hollywood-prepare-enfin-ladaptation-ultime.html",
+      "category": "tech",
+      "published_at": "2026-04-27T07:23:35+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "dd3c8900f13479ae3ff2f06d0fbe54a8": {
+      "source_id": "next-ink",
+      "title": "☕️ XChat : Elon Musk lance son concurrent à Signal ou WhatsApp sur iOS",
+      "url": "https://next.ink/brief_article/xchat-elon-musk-lance-son-concurrent-a-signal-ou-whatsapp-sur-ios/",
+      "category": "tech",
+      "published_at": "2026-04-27T07:12:01+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "6b741784f89e17494d94c3c5077c6603": {
+      "source_id": "numerama",
+      "title": "Le premier teaser de la suite de l’excellent Alien: Isolation est déjà flippant",
+      "url": "https://www.numerama.com/pop-culture/2240867-le-premier-teaser-de-la-suite-de-lexcellent-alien-isolation-est-deja-flippant.html",
+      "category": "tech",
+      "published_at": "2026-04-27T06:26:28+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "841876019e613d0ab444787cceb2c997": {
+      "source_id": "numerama",
+      "title": "Internet haut débit par satellite : voici une alternative française qui défie les géants étrangers [Sponso]",
+      "url": "https://www.numerama.com/tech/2231549-internet-haut-debit-par-satellite-voici-une-alternative-francaise-qui-defie-les-geants-etrangers.html",
+      "category": "tech",
+      "published_at": "2026-04-27T05:55:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "caed10002a999604e149424cdd09ca9a": {
+      "source_id": "next-ink",
+      "title": "Claude Code réfléchissait trop, puis plus assez : Anthropic corrige le coup de mou",
+      "url": "https://next.ink/235482/claude-code-reflechissait-trop-puis-plus-assez-anthropic-corrige-le-coup-de-mou/",
+      "category": "tech",
+      "published_at": "2026-04-27T05:52:29+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "b4c4d0ed0d94b313b23a9898ecf84d74": {
+      "source_id": "next-ink",
+      "title": "Vote électronique en AG d’assos, copros, primaires, etc. : les recommandations de la CNIL",
+      "url": "https://next.ink/235341/vote-electronique-en-ag-dassos-copros-primaires-etc-les-recommandations-de-la-cnil/",
+      "category": "tech",
+      "published_at": "2026-04-27T05:13:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "625096f2cbac8043c825fc9f5876bf5c": {
+      "source_id": "numerama",
+      "title": "Gmail, Drive, Meet… Préparez-vous à du changement pour les services Google",
+      "url": "https://www.numerama.com/tech/2240855-gmail-drive-meet-preparez-vous-a-du-changement-pour-les-services-google.html",
+      "category": "tech",
+      "published_at": "2026-04-27T05:00:41+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "669409306744b1dbbbc76d6da95bab9a": {
+      "source_id": "next-ink",
+      "title": "☕️ Le canadien Cohere et l’allemand Aleph Alpha forment une alternative IA aux États-Unis",
+      "url": "https://next.ink/brief_article/le-canadien-cohere-et-lallemand-aleph-alpha-forment-une-alternative-ia-aux-etats-unis/",
+      "category": "tech",
+      "published_at": "2026-04-27T04:47:36+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "14e15cf78e737fa62d2f8c7afd863e45": {
+      "source_id": "numerama",
+      "title": "La Petite Maison dans la Prairie : tout savoir sur le reboot Netflix de 2026",
+      "url": "https://www.numerama.com/pop-culture/2236235-la-petite-maison-dans-la-prairie-tout-savoir-sur-le-reboot-netflix-de-2026.html",
+      "category": "tech",
+      "published_at": "2026-04-26T15:30:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240548815896618"
+    },
+    "1ba739b09513fe5abaf2180587d5da25": {
+      "source_id": "openai-news",
+      "title": "Our principles",
+      "url": "https://openai.com/index/our-principles",
+      "category": "ia",
+      "published_at": "2026-04-26T15:00:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240550493491240"
+    },
+    "902cd155317dec6c2412f4c7b27a36c6": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft now lets admins uninstall Copilot on enterprise devices",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-lets-admins-uninstall-copilot-on-enterprise-devices/",
+      "category": "cyber",
+      "published_at": "2026-04-24T10:38:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "242d35ba6ce49759096ec4beca974ef4": {
+      "source_id": "bleepingcomputer",
+      "title": "American utility firm Itron discloses breach of internal IT network",
+      "url": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
+      "category": "cyber",
+      "published_at": "2026-04-26T13:22:34+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "2aa1f8dc564fa47211db89b42e81309f": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft rolls out revamped Windows Insider Program",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-revamped-windows-insider-program/",
+      "category": "cyber",
+      "published_at": "2026-04-25T16:07:13+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "bc79febe6231e2e89121b49014ba3a92": {
+      "source_id": "bleepingcomputer",
+      "title": "New BlackFile extortion group linked to surge of vishing attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-blackfile-extortion-gang-targets-retail-and-hospitality-orgs/",
+      "category": "cyber",
+      "published_at": "2026-04-24T17:26:27+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "5ea4d6709c9a58fb43181fc34cf20f1c": {
+      "source_id": "bleepingcomputer",
+      "title": "DORA and operational resilience: Credential management as a financial risk control",
+      "url": "https://www.bleepingcomputer.com/news/security/dora-and-operational-resilience-credential-management-as-a-financial-risk-control/",
+      "category": "cyber",
+      "published_at": "2026-04-24T13:10:20+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "a629960c8acc579fec8a668825376352": {
+      "source_id": "hackernews-cyber",
+      "title": "Researchers Uncover Pre-Stuxnet ‘fast16’ Malware Targeting Engineering Software",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
+      "category": "cyber",
+      "published_at": "2026-04-25T08:26:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "9c595a9075a6a4fac4e3e41c89fa0ca9": {
+      "source_id": "hackernews-cyber",
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "category": "cyber",
+      "published_at": "2026-04-25T04:08:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "5e82af8809e5197bc801ef0dc65839af": {
+      "source_id": "hackernews-cyber",
+      "title": "NASA Employees Duped in Chinese Phishing Scheme Targeting U.S. Defense Software",
+      "url": "https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html",
+      "category": "cyber",
+      "published_at": "2026-04-24T13:13:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "cd4e35641d1d5c3247ef67826b004b73": {
+      "source_id": "hackernews-cyber",
+      "title": "Bridging the AI Agent Authority Gap: Continuous Observability as the Decision Engine",
+      "url": "https://thehackernews.com/2026/04/bridging-ai-agent-authority-gap.html",
+      "category": "cyber",
+      "published_at": "2026-04-24T10:49:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "e227bceeda1bfd590be4808250b18a9b": {
+      "source_id": "hackernews-cyber",
+      "title": "26 FakeWallet Apps Found on Apple App Store Targeting Crypto Seed Phrases",
+      "url": "https://thehackernews.com/2026/04/26-fakewallet-apps-found-on-apple-app.html",
+      "category": "cyber",
+      "published_at": "2026-04-24T10:48:00+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240556025909349"
+    },
+    "b90929c6beb62c98feeeaa6a5261d226": {
+      "source_id": "journalduhacker",
+      "title": "Liens intéressants Journal du hacker semaine #17",
+      "url": "https://blog.journalduhacker.net/index.php?article584/liens-interessants-journal-du-hacker-semaine-17-2026",
+      "category": "dev",
+      "published_at": "2026-04-27T03:35:03+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "fd7d2bd636ae181f57287959345ca409": {
+      "source_id": "journalduhacker",
+      "title": "NextDNS : le rempart ultime pour votre vie privée en 2026 made in France ?",
+      "url": "https://goodtech.info/nextdns-guide-avantages-avis/",
+      "category": "dev",
+      "published_at": "2026-04-26T17:45:31+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "606f2c34d266235711659c6ef8b855eb": {
+      "source_id": "journalduhacker",
+      "title": "Le piège de l'anticipation : pourquoi les développeurs complexifient leur code trop tôt.",
+      "url": "https://open.substack.com/pub/ugodimini/p/pourquoi-les-developpeurs-anticipent",
+      "category": "dev",
+      "published_at": "2026-04-24T17:59:53+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "7e8cb72a45ca9a26dcf45f0f86681b2b": {
+      "source_id": "journalduhacker",
+      "title": "Ubuntu 26.04 LTS est disponible en version finale, avec cinq ans de mises à jour",
+      "url": "https://next.ink/brief_article/ubuntu-26-04-lts-est-disponible-en-version-finale-avec-cinq-ans-de-mises-a-jour/",
+      "category": "dev",
+      "published_at": "2026-04-24T12:24:38+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "3f03a0fc7c84472642bfa679ed029189": {
+      "source_id": "hnrss",
+      "title": "It's OK to abandon your side-project",
+      "url": "https://robbowen.digital/wrote-about/abandoned-side-projects/",
+      "category": "dev",
+      "published_at": "2026-04-27T07:11:16+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "652e1ed8940e43f27e963c084e794a08": {
+      "source_id": "hnrss",
+      "title": "The Mushroom That Makes People Have the Exact Same Hallucination",
+      "url": "https://www.vice.com/en/article/meet-the-mushroom-that-make-people-have-the-exact-same-hallucination/",
+      "category": "dev",
+      "published_at": "2026-04-27T06:21:17+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "be82e6bd60d705db4f47990a9b1d49ff": {
+      "source_id": "hnrss",
+      "title": "The Prompt API",
+      "url": "https://developer.chrome.com/docs/ai/prompt-api",
+      "category": "dev",
+      "published_at": "2026-04-27T01:18:58+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "07f60de12926f27cbdded1edb71ce578": {
+      "source_id": "hnrss",
+      "title": "EvanFlow – A TDD driven feedback loop for Claude Code",
+      "url": "https://github.com/evanklem/evanflow",
+      "category": "dev",
+      "published_at": "2026-04-27T00:56:39+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "867e04dc1c8a319672cf51796da6203e": {
+      "source_id": "hnrss",
+      "title": "TurboQuant: A first-principles walkthrough",
+      "url": "https://arkaung.github.io/interactive-turboquant/",
+      "category": "dev",
+      "published_at": "2026-04-27T00:54:32+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "23562770f432f0f6224f0ac0f5382d10": {
+      "source_id": "hnrss",
+      "title": "FreeBSD Device Drivers Book",
+      "url": "https://github.com/ebrandi/FDD-book",
+      "category": "dev",
+      "published_at": "2026-04-26T21:53:06+00:00",
+      "posted_at": "2026-04-27T08:33:00.255743+00:00",
+      "message_id": "1498240558945009768"
+    },
+    "1bf2d5dc557ba70aa2c188f24389ca03": {
+      "source_id": "numerama",
+      "title": "Votre iPhone 17 ne charge plus ? Apple serait victime d’un bug inquiétant (mais facile à réparer)",
+      "url": "https://www.numerama.com/tech/2241463-votre-iphone-17-ne-charge-plus-apple-serait-victime-dun-bug-inquietant-mais-facile-a-reparer.html",
+      "category": "tech",
+      "published_at": "2026-04-28T04:43:35+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "93011aca10fd7ae9a1962d6ac897348c": {
+      "source_id": "numerama",
+      "title": "Bevel, la meilleure application pour suivre sa santé sur iPhone, peut désormais calculer l’âge de votre corps",
+      "url": "https://www.numerama.com/tech/2241659-bevel-la-meilleure-application-pour-suivre-sa-sante-sur-iphone-peut-desormais-calculer-lage-de-votre-corps.html",
+      "category": "tech",
+      "published_at": "2026-04-27T14:57:50+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "6837b5819f1687d17072764615c808ff": {
+      "source_id": "numerama",
+      "title": "Ils saturent votre attention pour infiltrer votre réseau : on décortique la campagne cybercriminelle « Snow »",
+      "url": "https://www.numerama.com/cyberguerre/2240967-ils-saturent-votre-attention-pour-infiltrer-votre-reseau-on-decortique-la-campagne-cybercriminelle-snow.html",
+      "category": "tech",
+      "published_at": "2026-04-27T08:33:37+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "587e83783a141f4e93f4336c2aa4a655": {
+      "source_id": "next-ink",
+      "title": "Comment survivre à la déferlante à venir des vulnérabilités identifiées par IA ? (3/3)",
+      "url": "https://next.ink/232344/comment-survivre-a-la-deferlante-a-venir-des-vulnerabilites-identifiees-par-ia-3-3/",
+      "category": "tech",
+      "published_at": "2026-04-27T10:19:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "3aa43995d73c97bde64dd8037c9a396b": {
+      "source_id": "next-ink",
+      "title": "Dans un contexte de crise, des CHU misent sur l’IA pour créer un « hôpital augmenté »",
+      "url": "https://next.ink/235641/dans-un-contexte-de-crise-des-chu-misent-sur-lia-pour-creer-un-hopital-augmente/",
+      "category": "tech",
+      "published_at": "2026-04-27T09:09:36+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "4a41d04fb5bfd6821d2eed1a6dd3c2e6": {
+      "source_id": "numerama",
+      "title": "Quand pourrez-vous jouer à la nouvelle map d’ARC Raiders ?",
+      "url": "https://www.numerama.com/pop-culture/2241347-quand-pourrez-vous-jouer-a-la-nouvelle-map-darc-raiders.html",
+      "category": "tech",
+      "published_at": "2026-04-27T18:30:03+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "1f5b02ffe0bc38b644a3aba91a6ca66d": {
+      "source_id": "numerama",
+      "title": "« Œil pour œil, fils pour fils » : le duel plus tragique de House of the Dragon se précise",
+      "url": "https://www.numerama.com/pop-culture/2241627-oeil-pour-oeil-fils-pour-fils-le-duel-plus-tragique-de-house-of-the-dragon-se-precise.html",
+      "category": "tech",
+      "published_at": "2026-04-27T17:48:45+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "1e1e1555c1acd8ffdbf80f9322086300": {
+      "source_id": "numerama",
+      "title": "La fin des applications ? OpenAI préparerait un smartphone 100% IA",
+      "url": "https://www.numerama.com/tech/2241545-la-fin-des-applications-openai-preparerait-un-smartphone-100-ia.html",
+      "category": "tech",
+      "published_at": "2026-04-27T15:30:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "6abe22c080300ae4c18a5473466665d6": {
+      "source_id": "numerama",
+      "title": "Face aux constructeurs chinois, Kia baisse ses prix en Europe : vraiment ?",
+      "url": "https://www.numerama.com/vroom/2241809-face-aux-constructeurs-chinois-kia-baisse-ses-prix-en-europe-vraiment.html",
+      "category": "tech",
+      "published_at": "2026-04-27T15:12:09+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "d4f00259fae1cc9aa7e656541f499450": {
+      "source_id": "numerama",
+      "title": "À quelle heure pourra-t-on jouer à Diablo IV: Lord of Hatred ?",
+      "url": "https://www.numerama.com/pop-culture/2241351-a-quelle-heure-pourra-t-on-jouer-a-diablo-iv-lord-of-hatred.html",
+      "category": "tech",
+      "published_at": "2026-04-27T15:10:32+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564490353180712"
+    },
+    "f4b9b5b96622d21ac41e4ab4fcccc9c0": {
+      "source_id": "bleepingcomputer",
+      "title": "Robinhood account creation flaw abused to send phishing emails",
+      "url": "https://www.bleepingcomputer.com/news/security/robinhood-account-creation-flaw-abused-to-send-phishing-emails/",
+      "category": "cyber",
+      "published_at": "2026-04-27T22:11:01+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "62edd47743a4fa926618d3c156628eba": {
+      "source_id": "bleepingcomputer",
+      "title": "GlassWorm malware attacks return via 73 OpenVSX \"sleeper\" extensions",
+      "url": "https://www.bleepingcomputer.com/news/security/glassworm-malware-attacks-return-via-73-openvsx-sleeper-extensions/",
+      "category": "cyber",
+      "published_at": "2026-04-27T20:41:01+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "b8f43fd1fc01340aba6cc4b594ffae90": {
+      "source_id": "bleepingcomputer",
+      "title": "Home security giant ADT data breach affects 5.5 million people",
+      "url": "https://www.bleepingcomputer.com/news/security/home-security-giant-adt-data-breach-affects-55-million-people/",
+      "category": "cyber",
+      "published_at": "2026-04-27T13:43:11+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "66f2d41c7ff864f397d17c2baa0b7171": {
+      "source_id": "hackernews-cyber",
+      "title": "⚡ Weekly Recap: Fast16 Malware, XChat Launch, Federal Backdoor, AI Employee Tracking & More",
+      "url": "https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html",
+      "category": "cyber",
+      "published_at": "2026-04-27T12:30:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "d3c9242433040e53fb6ce294fb642318": {
+      "source_id": "bleepingcomputer",
+      "title": "Deepfake Voice Attacks are Outpacing Defenses: What Security Leaders Should Know",
+      "url": "https://www.bleepingcomputer.com/news/security/deepfake-voice-attacks-are-outpacing-defenses-what-security-leaders-should-know/",
+      "category": "cyber",
+      "published_at": "2026-04-27T12:00:09+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "b1aa5f14c9090f60179bd3799eb1ec8b": {
+      "source_id": "bleepingcomputer",
+      "title": "Canada arrests three for operating “SMS blaster” device in Toronto",
+      "url": "https://www.bleepingcomputer.com/news/security/canada-arrests-three-for-operating-sms-blaster-device-in-toronto/",
+      "category": "cyber",
+      "published_at": "2026-04-27T19:00:31+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "40fcc6ff1861ee1ff1680a5df945ce78": {
+      "source_id": "bleepingcomputer",
+      "title": "Alleged Silk Typhoon hacker extradited to US for cyberespionage",
+      "url": "https://www.bleepingcomputer.com/news/security/alleged-silk-typhoon-hacker-extradited-to-us-for-cyberespionage/",
+      "category": "cyber",
+      "published_at": "2026-04-27T18:56:03+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "4d188072c2dc93ec63440d45d300ae1b": {
+      "source_id": "bleepingcomputer",
+      "title": "FTC: Americans lost over $2.1 billion to social media scams in 2025",
+      "url": "https://www.bleepingcomputer.com/news/security/ftc-americans-lost-over-21-billion-to-social-media-scams-in-2025/",
+      "category": "cyber",
+      "published_at": "2026-04-27T15:27:53+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "9da04d2f127e645cf39b054a565c4703": {
+      "source_id": "zataz",
+      "title": "Vos données ont-elles déjà fuité ?",
+      "url": "https://www.zataz.com/vos-donnees-ont-elles-deja-fuite/",
+      "category": "cyber",
+      "published_at": "2026-04-27T22:54:53+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "36d10b6c19ba907783f66c86dfcc54a3": {
+      "source_id": "zataz",
+      "title": "Avril noir pour les forums pirates : arrestations, disparitions et fuite revendiquée contre DarkForums",
+      "url": "https://www.zataz.com/avril-noir-pour-les-forums-pirates-arrestations-disparitions-et-fuite-revendiquee-contre-darkforums/",
+      "category": "cyber",
+      "published_at": "2026-04-27T22:40:22+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564496824991827"
+    },
+    "bb651078c66768a8e4d2cf6efe3564ce": {
+      "source_id": "github-blog",
+      "title": "GitHub Copilot is moving to usage-based billing",
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "category": "dev",
+      "published_at": "2026-04-27T14:58:22+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "eb5aa2625d1492785756829d75218352": {
+      "source_id": "stackoverflow-blog",
+      "title": "Your LLM issues are really data issues",
+      "url": "https://stackoverflow.blog/2026/04/28/your-llm-issues-are-really-data-issues/",
+      "category": "dev",
+      "published_at": "2026-04-28T06:40:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "0067824f0bc296ada9d22baf48a5c131": {
+      "source_id": "stackoverflow-blog",
+      "title": "Welcome to the “find out” stage of AI",
+      "url": "https://stackoverflow.blog/2026/04/27/welcome-to-the-find-out-stage-of-ai/",
+      "category": "dev",
+      "published_at": "2026-04-27T12:56:07+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "007a3306cbe8a81a02b6480a0336aff0": {
+      "source_id": "realpython",
+      "title": "How to Conceptualize Python Fundamentals for Greater Mastery",
+      "url": "https://realpython.com/conceptualize-python-fundamentals/",
+      "category": "dev",
+      "published_at": "2026-04-27T13:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "14f94dcab4f0283c3bf2fa4f441cfbf9": {
+      "source_id": "realpython",
+      "title": "Quiz: Python's __all__: Packages, Modules, and Wildcard Imports",
+      "url": "https://realpython.com/quizzes/python-all-attribute/",
+      "category": "dev",
+      "published_at": "2026-04-27T11:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "9a14c7c6875c800a9abdf6b059148c7d": {
+      "source_id": "journalduhacker",
+      "title": "Prise en main de Zensical",
+      "url": "https://www.microlinux.fr/blog/zensical/",
+      "category": "dev",
+      "published_at": "2026-04-27T06:51:47+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "c372e1209f3a00fa2d3157c735b439a6": {
+      "source_id": "journalduhacker",
+      "title": "L'April participe à une opération collective devant le siège de Microsoft France (photos et vidéo)",
+      "url": "https://april.org/l-april-participe-a-une-operation-collective-devant-le-siege-de-microsoft-france",
+      "category": "dev",
+      "published_at": "2026-04-27T07:54:23+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "fc9a0c28316d632f07c1d28e0e61004a": {
+      "source_id": "journalduhacker",
+      "title": "Pack2TheRoot : cette vulnérabilité vieille de 12 ans menace Linux",
+      "url": "https://www.it-connect.fr/pack2theroot-cette-vulnerabilite-vieille-de-12-ans-menace-linux/",
+      "category": "dev",
+      "published_at": "2026-04-27T09:52:36+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "327b4c9f869f8f59f11932de34491244": {
+      "source_id": "hnrss",
+      "title": "San Francisco, AI capital of the world, is an economic laggard",
+      "url": "https://www.economist.com/finance-and-economics/2026/04/26/san-francisco-ai-capital-of-the-world-is-an-economic-laggard",
+      "category": "dev",
+      "published_at": "2026-04-28T03:32:42+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "806f4e757604a00a02108557c18f6be4": {
+      "source_id": "hnrss",
+      "title": "LingBot-Map: Streaming 3D reconstruction with geometric context transformer",
+      "url": "https://technology.robbyant.com/lingbot-map",
+      "category": "dev",
+      "published_at": "2026-04-28T02:27:40+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564509655105598"
+    },
+    "6240d32042acaa86794b5390c7b8efdf": {
+      "source_id": "openai-news",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "category": "ia",
+      "published_at": "2026-04-27T13:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "cb70df53d4d0b1b5b659ddbcf4443a70": {
+      "source_id": "openai-news",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "category": "ia",
+      "published_at": "2026-04-27T05:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "6cf5cb128beed571a774b274320c6999": {
+      "source_id": "openai-news",
+      "title": "An open-source spec for orchestration: Symphony",
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "category": "ia",
+      "published_at": "2026-04-26T23:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "329b8042445f727f281b63c28c4dfd12": {
+      "source_id": "openai-news",
+      "title": "Choco automates food distribution with AI agents",
+      "url": "https://openai.com/index/choco",
+      "category": "ia",
+      "published_at": "2026-04-26T23:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "c1219940c582f6d4263018792f710d98": {
+      "source_id": "huggingface-blog",
+      "title": "Adaptive Ultrasound Imaging with Physics-Informed NV-Raw2Insights-US AI",
+      "url": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
+      "category": "ia",
+      "published_at": "2026-04-27T23:28:13+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "100e890294240151866bab9a3a8b7382": {
+      "source_id": "huggingface-blog",
+      "title": "How to build scalable web apps with OpenAI's Privacy Filter",
+      "url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+      "category": "ia",
+      "published_at": "2026-04-26T23:00:00+00:00",
+      "posted_at": "2026-04-28T06:00:15.277334+00:00",
+      "message_id": "1498564516995399732"
+    },
+    "01fcd8898f777f51b6b2d9d463dfcb45": {
+      "source_id": "numerama",
+      "title": "Cette intelligence artificielle est figée en 1930, et ses prédictions sont fascinantes",
+      "url": "https://www.numerama.com/tech/2242623-cette-intelligence-artificielle-est-figee-en-1930-et-ses-predictions-sont-fascinantes.html",
+      "category": "tech",
+      "published_at": "2026-04-29T04:20:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "8bc38eda41dbb96832578911b4c3eb24": {
+      "source_id": "next-ink",
+      "title": "☕️ Ancien de Cloudflare et AWS, Brice Lecoeur prend la tête de Qwant et Shadow",
+      "url": "https://next.ink/?post_type=brief_article&p=235944",
+      "category": "tech",
+      "published_at": "2026-04-29T05:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "e0aa2a08ff3aea16bcadea4d828edb63": {
+      "source_id": "numerama",
+      "title": "La première nouveauté d’iOS 27 se dévoile et va plaire aux personnes qui prennent beaucoup de photos",
+      "url": "https://www.numerama.com/tech/2243115-la-premiere-nouveaute-dios-27-se-devoile-et-va-plaire-aux-personnes-qui-prennent-beaucoup-de-photos.html",
+      "category": "tech",
+      "published_at": "2026-04-29T04:44:55+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "db744070cb1c6fcd6cf33f6983d63289": {
+      "source_id": "numerama",
+      "title": "Ne vendez plus de logiciels et remplacez vos employés : le nouveau dogme des startups de la Silicon Valley",
+      "url": "https://www.numerama.com/tech/2241967-ne-vendez-plus-de-logiciels-et-remplacez-vos-employes-le-nouveau-dogme-des-startups-de-la-silicon-valley.html",
+      "category": "tech",
+      "published_at": "2026-04-28T08:21:07+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "c767000d02ed5175149ed1c3620bd4d7": {
+      "source_id": "numerama",
+      "title": "Fin de la paralysie à Baïkonour, la Russie a sauvé son pas de tir vers l’ISS",
+      "url": "https://www.numerama.com/sciences/2242573-fin-de-la-paralysie-a-baikonour-la-russie-a-sauve-son-pas-de-tir-vers-liss.html",
+      "category": "tech",
+      "published_at": "2026-04-28T16:49:24+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "72dc0d0787a6d2aad3fbd8ef67848aed": {
+      "source_id": "numerama",
+      "title": "« Une sorte de blocage mental » : un amateur armé de ChatGPT résout un problème mathématique vieux de 60 ans",
+      "url": "https://www.numerama.com/tech/2242081-vibe-mathing-un-amateur-arme-de-chatgpt-a-craque-une-enigme-mathematique-vieille-de-60-ans.html",
+      "category": "tech",
+      "published_at": "2026-04-28T15:03:52+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "84b6823eeb400509314983b79bfe828b": {
+      "source_id": "numerama",
+      "title": "Une actrice historique de Harry Potter explique le réel intérêt de la série HBO",
+      "url": "https://www.numerama.com/pop-culture/2242583-une-actrice-historique-de-harry-potter-explique-le-reel-interet-de-la-serie-hbo.html",
+      "category": "tech",
+      "published_at": "2026-04-28T14:50:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "2ebca14e51c3b42dbda343b3f915fb54": {
+      "source_id": "numerama",
+      "title": "La date de sortie de Ted Lasso saison 4 a été dévoilée par Apple TV",
+      "url": "https://www.numerama.com/pop-culture/2242867-la-date-de-sortie-de-ted-lasso-saison-4-a-ete-devoilee-par-apple-tv.html",
+      "category": "tech",
+      "published_at": "2026-04-28T14:36:03+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "c72ace9304f8e41355903602c2b10432": {
+      "source_id": "numerama",
+      "title": "Quelle est la date de la prochaine pleine Lune ?",
+      "url": "https://www.numerama.com/sciences/1599622-quelle-est-la-date-de-la-prochaine-pleine-lune-en-2026.html",
+      "category": "tech",
+      "published_at": "2026-04-28T14:35:19+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "69d79ea6ed439ec823f7bdb81ab310f3": {
+      "source_id": "next-ink",
+      "title": "L’étrange système de vérification des jeux PlayStation dématérialisés : bug ou DRM ?",
+      "url": "https://next.ink/235900/letrange-systeme-de-verification-des-jeux-playstation-dematerialises-bug-ou-drm/",
+      "category": "tech",
+      "published_at": "2026-04-28T13:46:18+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926881997848577"
+    },
+    "6c5515697d6f40cf89fbdc183acc61d3": {
+      "source_id": "bleepingcomputer",
+      "title": "Hackers are exploiting a critical LiteLLM pre-auth SQLi flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-a-critical-litellm-pre-auth-sqli-flaw/",
+      "category": "cyber",
+      "published_at": "2026-04-28T20:07:23+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "cc4e942ec36186b9891b637e8a0dbc67": {
+      "source_id": "hackernews-cyber",
+      "title": "Researchers Discover Critical GitHub CVE-2026-3854 RCE Flaw Exploitable via Single Git Push",
+      "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+      "category": "cyber",
+      "published_at": "2026-04-28T17:19:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "ca48b2ed4ab6a3d3df943adc4089d9da": {
+      "source_id": "hackernews-cyber",
+      "title": "Critical Unpatched Flaw Leaves Hugging Face LeRobot Open to Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "category": "cyber",
+      "published_at": "2026-04-28T10:18:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "81246498cf976d07f7ef9517eec337aa": {
+      "source_id": "bleepingcomputer",
+      "title": "Broken VECT 2.0 ransomware acts as a data wiper for large files",
+      "url": "https://www.bleepingcomputer.com/news/security/broken-vect-20-ransomware-acts-as-a-data-wiper-for-large-files/",
+      "category": "cyber",
+      "published_at": "2026-04-28T20:25:57+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "09175ecd8c73550fdf003e24b012c6a0": {
+      "source_id": "hackernews-cyber",
+      "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited within 36 Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+      "category": "cyber",
+      "published_at": "2026-04-29T04:34:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "181428be7dd3186aa5b1daf8747d8002": {
+      "source_id": "bleepingcomputer",
+      "title": "Video service Vimeo confirms Anodot breach exposed user data",
+      "url": "https://www.bleepingcomputer.com/news/security/video-service-vimeo-confirms-anodot-breach-exposed-user-data/",
+      "category": "cyber",
+      "published_at": "2026-04-28T18:04:22+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "0550681df7e1029541817148bebf27d1": {
+      "source_id": "bleepingcomputer",
+      "title": "US reportedly charges Scattered Spider hacker arrested in Finland",
+      "url": "https://www.bleepingcomputer.com/news/security/us-reportedly-charges-scattered-spider-hacker-arrested-in-finland/",
+      "category": "cyber",
+      "published_at": "2026-04-28T14:39:52+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "c46e3ee50bce5cdbec8e9b39148e17ea": {
+      "source_id": "bleepingcomputer",
+      "title": "Checkmarx confirms LAPSUS$ hackers leaked its stolen GitHub data",
+      "url": "https://www.bleepingcomputer.com/news/security/checkmarx-confirms-lapsus-hackers-leaked-its-stolen-github-data/",
+      "category": "cyber",
+      "published_at": "2026-04-28T13:50:40+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "3ef8a4d1fb72f160b1db52677bb313cd": {
+      "source_id": "cert-fr",
+      "title": "Bulletin d'actualité CERTFR-2026-ACT-019 (27 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/actualite/CERTFR-2026-ACT-019/",
+      "category": "cyber",
+      "published_at": "2026-04-26T23:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "a5d31d8a1639657c94adb486752aa071": {
+      "source_id": "cert-fr",
+      "title": "Multiples vulnérabilités dans les produits Microsoft (27 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0503/",
+      "category": "cyber",
+      "published_at": "2026-04-26T23:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926885286182962"
+    },
+    "1dc472c1198db6b9d393f7894f75ab4b": {
+      "source_id": "openai-news",
+      "title": "Our commitment to community safety",
+      "url": "https://openai.com/index/our-commitment-to-community-safety",
+      "category": "ia",
+      "published_at": "2026-04-27T23:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926887072825396"
+    },
+    "d0682fe009b6bb78ea7784f2435f81ec": {
+      "source_id": "openai-news",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "url": "https://openai.com/index/openai-on-aws",
+      "category": "ia",
+      "published_at": "2026-04-27T23:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926887072825396"
+    },
+    "3fabcf9934d1c4c5a21ffa87c8027122": {
+      "source_id": "huggingface-blog",
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "category": "ia",
+      "published_at": "2026-04-28T14:58:57+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926887072825396"
+    },
+    "cb8d13f887c446b6c04f771ac901c1cd": {
+      "source_id": "github-blog",
+      "title": "GitHub for Beginners: Getting started with Markdown",
+      "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/",
+      "category": "dev",
+      "published_at": "2026-04-28T17:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "8e39ac6317c532448c4cd1ace95ff8db": {
+      "source_id": "github-blog",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "category": "dev",
+      "published_at": "2026-04-28T14:30:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "6698b7bf7bd1fba274cff14b53cbc8b9": {
+      "source_id": "github-blog",
+      "title": "An update on GitHub availability",
+      "url": "https://github.blog/news-insights/company-news/an-update-on-github-availability/",
+      "category": "dev",
+      "published_at": "2026-04-28T09:01:37+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "892a87e1db467528b88110d5f759b883": {
+      "source_id": "journalduhacker",
+      "title": "Pourquoi les tests fonctionnels doivent être au cœur de votre stratégie d’équipe",
+      "url": "https://open.substack.com/pub/ugodimini/p/mental-model-2-pourquoi-les-developpeurs",
+      "category": "dev",
+      "published_at": "2026-04-28T20:51:40+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "48b75d217d3bca6827d744414ce3feaf": {
+      "source_id": "journalduhacker",
+      "title": "Domaines .brave : Nom de domaine à vie pour 15 €",
+      "url": "https://www.geeek.org/domaines-brave/",
+      "category": "dev",
+      "published_at": "2026-04-28T20:45:36+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "db459c34db291228d8fdd6101fbcaba7": {
+      "source_id": "journalduhacker",
+      "title": "Publier son blog Hugo sur Gitlab Pages",
+      "url": "https://olivier.dossmann.net/2026/04/publier-son-blog-hugo-sur-gitlab-pages/",
+      "category": "dev",
+      "published_at": "2026-04-28T17:57:13+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "529e9137524b06dafef258bad400efb8": {
+      "source_id": "journalduhacker",
+      "title": "Mise-en-place & Fnox : mon setup de gestion multi-projets",
+      "url": "https://www.vrchr.fr/posts/2026/04/28/mise-en-place-fnox-setup-multi-projets/",
+      "category": "dev",
+      "published_at": "2026-04-28T15:23:12+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "15038bb16e10b04d6199e3204686e88b": {
+      "source_id": "journalduhacker",
+      "title": "Fedora Linux 44 est dans les bacs",
+      "url": "https://renault.fedora-fr.org/2026/04/fedora-linux-44-est-dans-les-bacs/",
+      "category": "dev",
+      "published_at": "2026-04-28T13:28:33+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "da2384db0f0e61f3942d5d50b88abb52": {
+      "source_id": "stackoverflow-blog",
+      "title": "Turning scattered knowledge into trusted intelligence: Stack Internal 2026.3",
+      "url": "https://stackoverflow.blog/2026/04/28/turn-scattered-knowledge-into-trusted-intelligence/",
+      "category": "dev",
+      "published_at": "2026-04-28T12:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "af6bca733988c1950f00786ad2b19ddf": {
+      "source_id": "realpython",
+      "title": "Testing Your Code With Python's unittest",
+      "url": "https://realpython.com/courses/testing-your-code-with-pythons-unittest/",
+      "category": "dev",
+      "published_at": "2026-04-28T13:00:00+00:00",
+      "posted_at": "2026-04-29T06:00:15.302656+00:00",
+      "message_id": "1498926889715241032"
+    },
+    "c59065fca7141a590ce05f8cb6d66338": {
+      "source_id": "numerama",
+      "title": "Le pape dénonce l’IA… mais ses messages auraient été écrits par IA",
+      "url": "https://www.numerama.com/tech/2244283-le-pape-denonce-lia-mais-ses-messages-auraient-ete-ecrits-par-ia.html",
+      "category": "tech",
+      "published_at": "2026-04-30T04:15:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "10be4360cc1b0dc317851ea459c3e901": {
+      "source_id": "next-ink",
+      "title": "☕️ YouTube généralise le mode « image dans l’image » gratuit dans ses apps mobiles",
+      "url": "https://next.ink/brief_article/youtube-generalise-le-mode-image-dans-limage-gratuit-dans-ses-apps-mobiles/",
+      "category": "tech",
+      "published_at": "2026-04-30T04:59:15+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "264e2c72ad175d8c5fee329994dfb757": {
+      "source_id": "next-ink",
+      "title": "Le contenu d’un tiers des nouveaux sites est généré totalement ou partiellement par IA",
+      "url": "https://next.ink/236002/le-contenu-dun-tiers-des-nouveaux-sites-est-genere-totalement-ou-partiellement-par-ia/",
+      "category": "tech",
+      "published_at": "2026-04-29T14:04:43+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "5861e87c8a44195b0cd25a81e642988c": {
+      "source_id": "numerama",
+      "title": "ClawSwarm : le piège qui transforme vos agents IA en travailleurs fantômes d’une économie crypto",
+      "url": "https://www.numerama.com/cyberguerre/2243281-clawswarm-le-piege-qui-transforme-vos-agents-ia-en-travailleurs-fantomes-dune-economie-crypto.html",
+      "category": "tech",
+      "published_at": "2026-04-29T08:03:03+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "08c2463df0afe9e26810766b843130c1": {
+      "source_id": "numerama",
+      "title": "Volkswagen ID. Polo : tous les prix de la nouvelle citadine électrique phare",
+      "url": "https://www.numerama.com/vroom/2244115-volkswagen-id-polo-tous-les-prix-de-la-nouvelle-citadine-electrique-phare.html",
+      "category": "tech",
+      "published_at": "2026-04-29T14:58:12+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "9509238a8c55309d9e22ca26d411c6ee": {
+      "source_id": "next-ink",
+      "title": "GitHub en perte de fiabilité et de développeurs",
+      "url": "https://next.ink/236163/github-en-perte-de-fiabilite-et-de-developpeurs/",
+      "category": "tech",
+      "published_at": "2026-04-29T14:56:03+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "aef3a99bb394e6922a7a480d998e563b": {
+      "source_id": "numerama",
+      "title": "Uber se lance dans les hôtels et dévoile plusieurs nouveautés majeures",
+      "url": "https://www.numerama.com/tech/2244071-uber-se-lance-dans-les-hotels-et-devoile-plusieurs-nouveautes-majeures.html",
+      "category": "tech",
+      "published_at": "2026-04-29T14:44:11+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "e3bfe82ce68b3f371a09609c3dcb3412": {
+      "source_id": "numerama",
+      "title": "Le double atterrissage du Falcon Heavy de retour après deux ans d’absence",
+      "url": "https://www.numerama.com/sciences/2244257-le-double-atterrissage-du-falcon-heavy-de-retour-apres-deux-ans-et-demi-dabsence.html",
+      "category": "tech",
+      "published_at": "2026-04-29T14:42:53+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "b20e4ccc562dd987b43414d123b12073": {
+      "source_id": "numerama",
+      "title": "Le Diable s’habille en Prada 2 : pourquoi le retour de Miranda est la satire politique qu’on n’attendait pas",
+      "url": "https://www.numerama.com/pop-culture/2243797-le-diable-shabille-en-prada-2-pourquoi-le-retour-de-miranda-est-la-satire-politique-quon-nattendait-pas.html",
+      "category": "tech",
+      "published_at": "2026-04-29T14:34:02+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "384ba91c9ac0ab8c05dbb5e1e4947d0a": {
+      "source_id": "next-ink",
+      "title": "Formule 1, MotoGP : Canal+ fait feu de tout bois pour faire bloquer le streaming pirate",
+      "url": "https://next.ink/235838/formule-1-motogp-canal-fait-feu-de-tout-bois-pour-faire-bloquer-le-streaming-pirate/",
+      "category": "tech",
+      "published_at": "2026-04-29T14:31:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289282391834715"
+    },
+    "23af9c509a3da781c58c36a57fd353b6": {
+      "source_id": "bleepingcomputer",
+      "title": "GitHub fixes RCE flaw that gave access to millions of private repos",
+      "url": "https://www.bleepingcomputer.com/news/security/github-fixes-rce-flaw-that-gave-access-to-millions-of-private-repos/",
+      "category": "cyber",
+      "published_at": "2026-04-29T11:41:17+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "6d0012e154fa5ca90b0d51a67acdc867": {
+      "source_id": "bleepingcomputer",
+      "title": "Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/",
+      "category": "cyber",
+      "published_at": "2026-04-29T19:50:35+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "984392923c54c1303bdc29b19fc707a9": {
+      "source_id": "bleepingcomputer",
+      "title": "cPanel, WHM emergency update fixes critical auth bypass bug",
+      "url": "https://www.bleepingcomputer.com/news/security/cpanel-whm-emergency-update-fixes-critical-auth-bypass-bug/",
+      "category": "cyber",
+      "published_at": "2026-04-29T14:51:44+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "3c3f4e5e01d3a372c1aff030ea4e28a7": {
+      "source_id": "bleepingcomputer",
+      "title": "CISA orders feds to patch Windows flaw exploited as zero-day",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-windows-flaw-exploited-in-zero-day-attacks/",
+      "category": "cyber",
+      "published_at": "2026-04-29T09:29:31+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "ffefde9c81f91295677ffc7399e0189e": {
+      "source_id": "bleepingcomputer",
+      "title": "Popular WordPress redirect plugin hid dormant backdoor for years",
+      "url": "https://www.bleepingcomputer.com/news/security/popular-wordpress-redirect-plugin-hid-dormant-backdoor-for-years/",
+      "category": "cyber",
+      "published_at": "2026-04-29T21:13:15+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "3c4eeead680be50f0ced9cef6bcfe67b": {
+      "source_id": "bleepingcomputer",
+      "title": "Official SAP npm packages compromised to steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/official-sap-npm-packages-compromised-to-steal-credentials/",
+      "category": "cyber",
+      "published_at": "2026-04-29T21:43:44+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "8d1507f4e3131f9180f3078633f8d562": {
+      "source_id": "bleepingcomputer",
+      "title": "Learning from the Vercel breach: Shadow AI & OAuth sprawl",
+      "url": "https://www.bleepingcomputer.com/news/security/learning-from-the-vercel-breach-shadow-ai-and-oauth-sprawl/",
+      "category": "cyber",
+      "published_at": "2026-04-29T12:05:14+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "b34c64acf1818b9790b376a3f9bfec96": {
+      "source_id": "bleepingcomputer",
+      "title": "Hackers arrested for hijacking and selling 610,000 Roblox accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-arrested-for-hijacking-and-selling-610-000-roblox-accounts/",
+      "category": "cyber",
+      "published_at": "2026-04-29T17:32:15+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "1f4ddcbb4740eef60ed4836f7f4d4ee2": {
+      "source_id": "hackernews-cyber",
+      "title": "SAP-Related npm Packages Compromised in Credential-Stealing Supply Chain Attack",
+      "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+      "category": "cyber",
+      "published_at": "2026-04-29T15:26:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "db4149b12eb6670c5065ca2e648802c2": {
+      "source_id": "bleepingcomputer",
+      "title": "European police dismantles €50 million crypto investment fraud ring",
+      "url": "https://www.bleepingcomputer.com/news/security/european-police-dismantles-50-million-crypto-investment-fraud-ring/",
+      "category": "cyber",
+      "published_at": "2026-04-29T13:27:36+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289285298360401"
+    },
+    "e133a6c61d3dbcc63d000e5a73dbeb52": {
+      "source_id": "journalduhacker",
+      "title": "swaks : Envoyez des mails depuis vos scripts sans MTA",
+      "url": "https://www.linuxtricks.fr/wiki/swaks-envoyez-des-mails-depuis-vos-scripts-sans-mta",
+      "category": "dev",
+      "published_at": "2026-04-29T14:31:53+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "24c17be5366b853a404ca0d740a04aaa": {
+      "source_id": "realpython",
+      "title": "AI Coding Agents Guide: A Map of the Four Workflow Types",
+      "url": "https://realpython.com/ai-coding-agents-guide/",
+      "category": "dev",
+      "published_at": "2026-04-29T13:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "ac0d395b08806ef2b1de668e8c72b8ec": {
+      "source_id": "realpython",
+      "title": "Quiz: ChatterBot: Build a Chatbot With Python",
+      "url": "https://realpython.com/quizzes/build-a-chatbot-python-chatterbot/",
+      "category": "dev",
+      "published_at": "2026-04-29T11:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "05d48de9373c0156b01e7ec6c8d2904f": {
+      "source_id": "realpython",
+      "title": "Quiz: Python 3.13: A Modern REPL",
+      "url": "https://realpython.com/quizzes/python313-repl/",
+      "category": "dev",
+      "published_at": "2026-04-29T11:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "b31c276555f02e098842ccc741054cb4": {
+      "source_id": "realpython",
+      "title": "Quiz: Use Codex CLI to Enhance Your Python Projects",
+      "url": "https://realpython.com/quizzes/codex-cli-video/",
+      "category": "dev",
+      "published_at": "2026-04-28T11:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "e0a477e526d7873ed8181fd921cb5821": {
+      "source_id": "realpython",
+      "title": "Quiz: Testing Your Code With Python's unittest",
+      "url": "https://realpython.com/quizzes/testing-your-code-with-pythons-unittest/",
+      "category": "dev",
+      "published_at": "2026-04-28T11:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "f9735348877bc9058695185420e9644f": {
+      "source_id": "journalduhacker",
+      "title": "Pourquoi `curl | bash` est une mauvaise habitude dangereuse",
+      "url": "https://tferdinand.net/pourquoi-curl-bash-est-une-mauvaise-habitude-dangereuse/",
+      "category": "dev",
+      "published_at": "2026-04-29T08:49:07+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "9cf7f3ec7182129361c6688f8b9b1a28": {
+      "source_id": "journalduhacker",
+      "title": "Début de soirée avec Cilium et Clever",
+      "url": "https://blog.littlejo.link/cilium/clever/intro/",
+      "category": "dev",
+      "published_at": "2026-04-29T06:23:53+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "7f50e0d93ae6b9a9f592ebae93b97f1d": {
+      "source_id": "journalduhacker",
+      "title": "« Dégoogliser » l’éducation ? Le modèle alternatif de PeerTube",
+      "url": "https://theconversation.com/degoogliser-leducation-le-modele-alternatif-de-peertube-280631",
+      "category": "dev",
+      "published_at": "2026-04-29T08:28:13+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "610ef8409f649429bca295e05511319b": {
+      "source_id": "journalduhacker",
+      "title": "Sauvegarder votre Raspberry Pi avec rpi-clone et rsync",
+      "url": "https://domopi.eu/sauvegarder-votre-raspberry-pi-avec-rpi-clone-et-rsync/",
+      "category": "dev",
+      "published_at": "2026-04-28T07:50:41+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289289115308094"
+    },
+    "5425e3ec5ff916d0b47f51b2189c5ae8": {
+      "source_id": "openai-news",
+      "title": "Where the goblins came from",
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "category": "ia",
+      "published_at": "2026-04-29T19:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "8740c4948a13b99d12c5df72d3103753": {
+      "source_id": "openai-news",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "category": "ia",
+      "published_at": "2026-04-29T14:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "ad57812b466ec53c54581202a596da18": {
+      "source_id": "openai-news",
+      "title": "Cybersecurity in the Intelligence Age",
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "category": "ia",
+      "published_at": "2026-04-29T03:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "33ea9610c4d54b086ecbf19e38e47092": {
+      "source_id": "huggingface-blog",
+      "title": "AI evals are becoming the new compute bottleneck",
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "category": "ia",
+      "published_at": "2026-04-29T15:45:09+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "59ef3aa9e68bf3fd0c96d21eb430f553": {
+      "source_id": "huggingface-blog",
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "category": "ia",
+      "published_at": "2026-04-29T14:01:48+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "f6674537e2b81f6654df2c88c2d84b66": {
+      "source_id": "huggingface-blog",
+      "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+      "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+      "category": "ia",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-04-30T06:00:19.260157+00:00",
+      "message_id": "1499289291598331935"
+    },
+    "631bc11222971f3ef45c1bdf5a29063c": {
+      "source_id": "github-blog",
+      "title": "GitHub Copilot CLI for Beginners: Interactive v. non-interactive mode",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/",
+      "category": "dev",
+      "published_at": "2026-04-30T15:09:02+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "3fb3e9ef8db4dec5cfc0623add1438d9": {
+      "source_id": "stackoverflow-blog",
+      "title": "Time is a construct but it can still break your software",
+      "url": "https://stackoverflow.blog/2026/05/01/time-is-a-construct-but-it-can-break-your-software/",
+      "category": "dev",
+      "published_at": "2026-05-01T06:40:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "94ba28150d1d1fc0d7626546dc374920": {
+      "source_id": "journalduhacker",
+      "title": "[Podcast Projets Libres] Linux dans ton smartphone : où en est-on ?",
+      "url": "https://www.projets-libres.org/podcast/s4e16-linux-dans-ton-smartphone/",
+      "category": "dev",
+      "published_at": "2026-04-30T20:13:07+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "60d6bebf186a274c4630f50dd4d4e0c2": {
+      "source_id": "journalduhacker",
+      "title": "rmadison, l'outil CLI pour interroger le dépôt des paquets de Debian",
+      "url": "https://doc.huc.fr.eu.org/fr/sys/debian/rmadison/",
+      "category": "dev",
+      "published_at": "2026-04-30T15:49:33+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "8e18e6f3a3e2e53a13b2de0b5e75229c": {
+      "source_id": "stackoverflow-blog",
+      "title": "The Worst Coder in the World goes agentic: building a leaderboard cracking AI",
+      "url": "https://stackoverflow.blog/2026/04/30/worst-coder-in-the-world-goes-agentic/",
+      "category": "dev",
+      "published_at": "2026-04-30T15:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "dfcf80c8481ac6460f78773c9ad931b6": {
+      "source_id": "realpython",
+      "title": "Quiz: Using Python for Data Analysis",
+      "url": "https://realpython.com/quizzes/python-for-data-analysis/",
+      "category": "dev",
+      "published_at": "2026-04-30T11:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "fc815c405b698da0697886b72c8a4511": {
+      "source_id": "journalduhacker",
+      "title": "Copy Fail (CVE-2026-31431) : détecter, corriger, comprendre",
+      "url": "https://loud-technology.com/insight/copy-fail-cve-2026-31431-faille-kernel-linux/",
+      "category": "dev",
+      "published_at": "2026-04-30T14:42:39+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "118cae82e19a760b8868a746b77178ea": {
+      "source_id": "journalduhacker",
+      "title": "Actualité Cyber de la semaine du 26/04/2026",
+      "url": "https://newsletter.erreur403.fr/p/erreur-403-74-vulnerabilite-critique-cpanel-exploitee-et-portail-ants-ferme",
+      "category": "dev",
+      "published_at": "2026-04-30T09:20:21+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "b11205b2f82c3321b0000a864eab5bda": {
+      "source_id": "journalduhacker",
+      "title": "Proxmox Backup Server 4.2 est disponible : voici les nouveautés principales",
+      "url": "https://www.it-connect.fr/proxmox-backup-server-4-2-est-disponible-voici-les-nouveautes-principales/",
+      "category": "dev",
+      "published_at": "2026-04-30T05:42:31+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "88b9a69d46d5b0f74920f823dfe13d99": {
+      "source_id": "journalduhacker",
+      "title": "Proxmox Backup Server : sauvegarder ses VMs auto",
+      "url": "https://maxdetech.fr/proxmox-backup-server-vm-lxc/",
+      "category": "dev",
+      "published_at": "2026-04-30T06:02:41+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688494488883240"
+    },
+    "1f058a7401df62edeed0c453d1197bc5": {
+      "source_id": "bleepingcomputer",
+      "title": "Critical cPanel and WHM bug exploited as a zero-day, PoC now available",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cpanel-and-whm-bug-exploited-as-a-zero-day-poc-now-available/",
+      "category": "cyber",
+      "published_at": "2026-04-30T10:40:31+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "f26dfaa0c6e761b0362af6667fe7c06e": {
+      "source_id": "bleepingcomputer",
+      "title": "US ransomware negotiators get 4 years in prison over BlackCat attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiators-get-4-years-in-prison-over-blackcat-attacks/",
+      "category": "cyber",
+      "published_at": "2026-05-01T06:47:11+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "c9c052a11cd64fd49412d59d762469c2": {
+      "source_id": "bleepingcomputer",
+      "title": "New Linux ‘Copy Fail’ flaw gives hackers root on major distros",
+      "url": "https://www.bleepingcomputer.com/news/security/new-linux-copy-fail-flaw-gives-hackers-root-on-major-distros/",
+      "category": "cyber",
+      "published_at": "2026-04-30T12:54:47+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "4b1d96b3ede8b7ea1d4aaf0ec893a139": {
+      "source_id": "bleepingcomputer",
+      "title": "New Bluekit phishing service includes an AI assistant, 40 templates",
+      "url": "https://www.bleepingcomputer.com/news/security/new-bluekit-phishing-service-includes-an-ai-assistant-40-templates/",
+      "category": "cyber",
+      "published_at": "2026-04-30T17:58:50+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "1bc78fb7b1569c255eb4bb0438767340": {
+      "source_id": "bleepingcomputer",
+      "title": "Romanian leader of online swatting ring gets 4 years in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/romanian-leader-of-online-swatting-ring-gets-4-years-in-prison/",
+      "category": "cyber",
+      "published_at": "2026-04-30T16:45:12+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "a517eda4f8012126e7742ac71fa09270": {
+      "source_id": "cert-fr",
+      "title": "Multiples vulnérabilités dans Xen (29 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0509/",
+      "category": "cyber",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "00b10f299c9f84a069540598d9d14166": {
+      "source_id": "cert-fr",
+      "title": "Vulnérabilité dans Elastic Package Registry (29 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0511/",
+      "category": "cyber",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "675a3934cec2ff9efbe9259dfb89b2f6": {
+      "source_id": "cert-fr",
+      "title": "Multiples vulnérabilités dans Moodle (29 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0508/",
+      "category": "cyber",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "9c8da84afc97eae9018e61e152795f48": {
+      "source_id": "cert-fr",
+      "title": "Multiples vulnérabilités dans les produits Microsoft (29 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0513/",
+      "category": "cyber",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "e5a01a6581f90f40f374733b23504921": {
+      "source_id": "cert-fr",
+      "title": "Vulnérabilité dans Microsoft Edge (29 avril 2026)",
+      "url": "https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-0512/",
+      "category": "cyber",
+      "published_at": "2026-04-28T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688497081221200"
+    },
+    "7ec2acda9d695be1807f31b09135b0c3": {
+      "source_id": "openai-news",
+      "title": "Introducing Advanced Account Security",
+      "url": "https://openai.com/index/advanced-account-security",
+      "category": "ia",
+      "published_at": "2026-04-29T23:00:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688498461020302"
+    },
+    "543293b4628cc413387e48e6fda16419": {
+      "source_id": "next-ink",
+      "title": "#Flock : Vive la fête du travail !",
+      "url": "https://next.ink/236560/flock-vive-la-fete-du-travail/",
+      "category": "tech",
+      "published_at": "2026-05-01T07:10:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "5b26442f9fc1c67ac1aa0fec417ca28f": {
+      "source_id": "numerama",
+      "title": "Voyage dans les abysses : voilà l’incroyable vision des animaux de l’extrême",
+      "url": "https://www.numerama.com/sciences/2242753-ce-que-les-creatures-des-abysses-voient-dans-le-noir.html",
+      "category": "tech",
+      "published_at": "2026-05-01T06:31:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "1781673aff68710073deeaae87b1f13b": {
+      "source_id": "next-ink",
+      "title": "#Nextquick : Pourquoi et comment Opus 4.7 crame ses tokens beaucoup plus vite qu’Opus 4.6",
+      "url": "https://next.ink/236418/nextquick-pourquoi-et-comment-opus-4-7-crame-ses-tokens-beaucoup-plus-vite-quopus-4-6/",
+      "category": "tech",
+      "published_at": "2026-05-01T06:09:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "3cd4d72713d2386a2174cfae65d4c800": {
+      "source_id": "numerama",
+      "title": "Le casting 100 % francophone rêvé pour Clair Obscur : Expedition 33",
+      "url": "https://www.numerama.com/pop-culture/2236057-le-casting-100-francophone-reve-pour-clair-obscur-expedition-33.html",
+      "category": "tech",
+      "published_at": "2026-05-01T05:01:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "9731cb1e524da170edd4045cbeb1e5b5": {
+      "source_id": "numerama",
+      "title": "Étoiles filantes, pleine Lune, retour de Mercure : que voir dans le ciel en mai 2026 ?",
+      "url": "https://www.numerama.com/sciences/2242841-etoiles-filantes-pleine-lune-retour-de-mercure-que-voir-dans-le-ciel-en-mai-2026.html",
+      "category": "tech",
+      "published_at": "2026-05-01T04:35:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "60c055a2b420dd60bc8bbca34692c382": {
+      "source_id": "next-ink",
+      "title": "Cybersécurité de l’État : le plan du gouvernement pour (essayer de) stopper l’hémorragie",
+      "url": "https://next.ink/236507/cybersecurite-de-letat-le-plan-du-gouvernement-pour-essayer-de-stopper-lhemorragie/",
+      "category": "tech",
+      "published_at": "2026-04-30T17:31:41+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "076eb33d15fbdde544237c9e71d00e51": {
+      "source_id": "numerama",
+      "title": "On annonçait sa mort face à ChatGPT, mais Google n’a jamais gagné autant d’argent",
+      "url": "https://www.numerama.com/tech/2244415-on-annoncait-sa-mort-face-a-chatgpt-mais-google-na-jamais-gagne-autant-dargent.html",
+      "category": "tech",
+      "published_at": "2026-04-30T14:30:00+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "02586c3a9499f761dca05b92ed26ef55": {
+      "source_id": "numerama",
+      "title": "Hadopi est presque mort : le dispositif anti-piratage ne peut plus vous envoyer devant un juge",
+      "url": "https://www.numerama.com/cyberguerre/2245387-hadopi-est-presque-mort-le-dispositif-anti-piratage-ne-peut-plus-vous-envoyer-devant-un-juge.html",
+      "category": "tech",
+      "published_at": "2026-04-30T14:17:09+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "d0bbc1614b09536b49b36a9e4a6e1262": {
+      "source_id": "numerama",
+      "title": "Quand sort le jeu de course Star Wars: Galactic Racer ?",
+      "url": "https://www.numerama.com/pop-culture/2245327-quand-sort-le-jeu-de-course-star-wars-galactic-racer.html",
+      "category": "tech",
+      "published_at": "2026-04-30T13:54:06+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "46db6ddaf0286222ca6667d264bbc495": {
+      "source_id": "numerama",
+      "title": "Vous pouvez enfin quitter l’application YouTube sans couper votre vidéo, et sans payer d’abonnement Premium",
+      "url": "https://www.numerama.com/tech/2244731-vous-pouvez-enfin-quitter-lapplication-youtube-sans-couper-votre-video-et-sans-payer-dabonnement-premium.html",
+      "category": "tech",
+      "published_at": "2026-04-30T13:50:25+00:00",
+      "posted_at": "2026-05-01T08:26:39.501841+00:00",
+      "message_id": "1499688500868415581"
+    },
+    "c2e9f1759d780646b7652c9482cd153d": {
+      "source_id": "numerama",
+      "title": "Ils ont demandé à l’IA d’imaginer la dernière pièce de Molière",
+      "url": "https://www.numerama.com/tech/2237247-ils-ont-demande-a-lia-dimaginer-la-derniere-piece-de-moliere.html",
+      "category": "tech",
+      "published_at": "2026-05-01T15:00:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "a2b5100f043c21af90d6d846121e06f9": {
+      "source_id": "numerama",
+      "title": "F1 en streaming : où voir le GP de Miami de la saison 2026 ?",
+      "url": "https://www.numerama.com/pop-culture/704990-comment-regarder-le-gp-de-miami-de-f1-en-direct.html",
+      "category": "tech",
+      "published_at": "2026-05-01T13:44:49+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "53b0ceed769efba1e1d7a10760482268": {
+      "source_id": "numerama",
+      "title": "L’un des meilleurs smartphones milieu de gamme est moins cher sur Amazon pour les French Days",
+      "url": "https://www.numerama.com/tech/2245241-lun-des-meilleurs-smartphones-milieu-de-gamme-est-moins-cher-sur-amazon-pour-les-french-days.html",
+      "category": "tech",
+      "published_at": "2026-05-01T13:11:05+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "fc4eea80efbefc5196de2352cfc83dcf": {
+      "source_id": "numerama",
+      "title": "Tomodachi Life : comment bien régler la personnalité de vos Mii",
+      "url": "https://www.numerama.com/pop-culture/2245383-tomodachi-life-comment-bien-regler-la-personnalite-de-vos-mii.html",
+      "category": "tech",
+      "published_at": "2026-05-01T12:45:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "418a5f5e28493a14dab8db662e4d2ecb": {
+      "source_id": "numerama",
+      "title": "Vos jeux Steam auxquels vous n’avez jamais joué vont enfin servir à quelque chose",
+      "url": "https://www.numerama.com/pop-culture/2245165-vos-jeux-steam-auxquels-vous-navez-jamais-joue-vont-enfin-servir-a-quelque-chose.html",
+      "category": "tech",
+      "published_at": "2026-05-01T11:30:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "7e61132ca9a2511ead8ba51933ff5771": {
+      "source_id": "numerama",
+      "title": "Ce film culte des années 90 avec Keanu Reeves va avoir une suite en série",
+      "url": "https://www.numerama.com/pop-culture/2245493-ce-film-culte-des-annees-90-avec-keanu-reeves-va-avoir-une-suite-en-serie.html",
+      "category": "tech",
+      "published_at": "2026-05-01T10:20:19+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "49e351b504b27f65e27e26842e1a4d6d": {
+      "source_id": "numerama",
+      "title": "La fuite dans l’ISS est réparée, mais on ne sait toujours pas d’où elle vient",
+      "url": "https://www.numerama.com/sciences/2244821-la-fuite-dans-liss-est-reparee-mais-on-ne-sait-toujours-pas-dou-elle-vient.html",
+      "category": "tech",
+      "published_at": "2026-05-01T09:31:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "e70f5cb0d78d3376769386b39c5888ff": {
+      "source_id": "numerama",
+      "title": "Au fait, pourquoi l’IA Claude d’Anthropic s’appelle Claude ?",
+      "url": "https://www.numerama.com/tech/2235401-au-fait-pourquoi-claude-sappelle-claude.html",
+      "category": "tech",
+      "published_at": "2026-05-01T08:01:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "1bab8b37ae6599622de0a824094e106c": {
+      "source_id": "arstechnica",
+      "title": "Study: AI models that consider user's feeling are more likely to make errors",
+      "url": "https://arstechnica.com/ai/2026/05/study-ai-models-that-consider-users-feeling-are-more-likely-to-make-errors/",
+      "category": "tech",
+      "published_at": "2026-05-01T21:23:36+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "c8c19b4f188cb2476466c9c0e085a6c4": {
+      "source_id": "arstechnica",
+      "title": "The RAMpocalypse has bought Microsoft valuable time in the fight against SteamOS",
+      "url": "https://arstechnica.com/gaming/2026/05/the-rampocalypse-has-bought-microsoft-valuable-time-in-the-fight-against-steamos/",
+      "category": "tech",
+      "published_at": "2026-05-01T21:00:59+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014042318897324"
+    },
+    "fcc9588526e41ccd575d9948641a920e": {
+      "source_id": "bleepingcomputer",
+      "title": "15-year-old detained over French govt agency data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/15-year-old-detained-over-french-govt-agency-data-breach/",
+      "category": "cyber",
+      "published_at": "2026-05-01T16:52:06+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "8fa069046da4cd4e66f0511160df149d": {
+      "source_id": "bleepingcomputer",
+      "title": "Story retracted",
+      "url": "https://www.bleepingcomputer.com/news/security/story-retracted/",
+      "category": "cyber",
+      "published_at": "2026-05-01T15:26:28+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "bd3e4eaac1a84f286fd67235e196e75b": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft tests modern Windows Run, says it's faster than legacy dialog",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-modern-windows-run-says-its-faster-than-legacy-dialog/",
+      "category": "cyber",
+      "published_at": "2026-05-01T23:18:05+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "13a1459ed51f1d5ad0245fb0c21b164f": {
+      "source_id": "bleepingcomputer",
+      "title": "Edu tech firm Instructure discloses cyber incident, probes impact",
+      "url": "https://www.bleepingcomputer.com/news/security/edu-tech-firm-instructure-discloses-cyber-incident-probes-impact/",
+      "category": "cyber",
+      "published_at": "2026-05-01T22:43:35+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "f9538ea3009c27eafd869e052cd0a7ca": {
+      "source_id": "krebs",
+      "title": "Anti-DDoS Firm Heaped Attacks on Brazilian ISPs",
+      "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+      "category": "cyber",
+      "published_at": "2026-04-30T13:04:26+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "2c0a1b2ea28c0bdc5de41219c97d29f6": {
+      "source_id": "hackernews-cyber",
+      "title": "Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft",
+      "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
+      "category": "cyber",
+      "published_at": "2026-05-01T08:43:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "74c1aff8c9a0f5d10a97ab6fbccb14bc": {
+      "source_id": "hackernews-cyber",
+      "title": "CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
+      "category": "cyber",
+      "published_at": "2026-04-29T07:46:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "7d6f9073e2b05dff15a8208cddf5a263": {
+      "source_id": "bleepingcomputer",
+      "title": "Criminal IP and Securonix ThreatQ Collaborate to Enhance Threat Intelligence Operations",
+      "url": "https://www.bleepingcomputer.com/news/security/criminal-ip-and-securonix-threatq-collaborate-to-enhance-threat-intelligence-operations/",
+      "category": "cyber",
+      "published_at": "2026-05-01T13:02:12+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "971923fc117fd51b9b737af4188704b2": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft fixes Remote Desktop warnings displaying incorrectly",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-warnings-displaying-incorrectly/",
+      "category": "cyber",
+      "published_at": "2026-05-01T11:46:48+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "8f4e1b68aaa02d82f3d904fe1aed6a4f": {
+      "source_id": "bleepingcomputer",
+      "title": "Microsoft now lets admins choose pre-installed Store apps to uninstall",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-lets-admins-choose-pre-installed-store-apps-to-uninstall/",
+      "category": "cyber",
+      "published_at": "2026-05-01T10:10:07+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014044831158343"
+    },
+    "64c918191579400a9651b534aa15a23f": {
+      "source_id": "stackoverflow-blog",
+      "title": "Dispatches from O'Reilly: Fast Paths and Slow Paths",
+      "url": "https://stackoverflow.blog/2026/05/01/dispatches-from-o-reilly-fast-paths-and-slow-paths/",
+      "category": "dev",
+      "published_at": "2026-05-01T13:00:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "30d0695081a6050f600e75798bab2c46": {
+      "source_id": "realpython",
+      "title": "The Real Python Podcast – Episode #293: Agentic Data Science Pair Programming With marimo pair",
+      "url": "https://realpython.com/podcasts/rpp/293/",
+      "category": "dev",
+      "published_at": "2026-05-01T11:00:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "e12d40011fa0367dea14bc3d3332e354": {
+      "source_id": "realpython",
+      "title": "Quiz: The Factory Method Pattern and Its Implementation in Python",
+      "url": "https://realpython.com/quizzes/factory-method-python/",
+      "category": "dev",
+      "published_at": "2026-05-01T11:00:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "c5b04a45c7a50eee038ddbe8075db762": {
+      "source_id": "journalduhacker",
+      "title": "Veille #54 — Les 35 actus dev qu'il ne fallait pas rater cette semaine",
+      "url": "https://www.camilleroux.com/veille-54-lactu-de-la-semaine/",
+      "category": "dev",
+      "published_at": "2026-05-01T12:18:00+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "6254765d36a8175b9925ce417339d714": {
+      "source_id": "journalduhacker",
+      "title": "Woodstock Backup v2.0.0 - La réécriture complète en Rust",
+      "url": "https://shadoware.org/post/woodstock_v2",
+      "category": "dev",
+      "published_at": "2026-05-01T09:56:23+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "b1a8970d3a529433d27203e1af540f7e": {
+      "source_id": "journalduhacker",
+      "title": "Friction Engineering — quand le désaccord devient le mécanisme",
+      "url": "https://oxynoe.io/fr/fragments/friction-engineering/",
+      "category": "dev",
+      "published_at": "2026-04-29T15:13:14+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "e1b95ddb6e5a019618b097b4f9835335": {
+      "source_id": "hnrss",
+      "title": "CollectWise (YC F24) Is Hiring",
+      "url": "https://www.ycombinator.com/companies/collectwise/jobs/rEWfZ6R-senior-forward-deployed-engineer",
+      "category": "dev",
+      "published_at": "2026-05-02T03:43:20+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "c46342c6c605b9e3b313dec60d9aa3ff": {
+      "source_id": "hnrss",
+      "title": "Ask.com has closed",
+      "url": "https://www.ask.com/",
+      "category": "dev",
+      "published_at": "2026-05-02T03:12:35+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "87ce926ec645f81c258a33963c6cfe27": {
+      "source_id": "hnrss",
+      "title": "K3k: Kubernetes in Kubernetes",
+      "url": "https://github.com/rancher/k3k",
+      "category": "dev",
+      "published_at": "2026-05-02T03:00:42+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "b1cd32a6a2794df295c1b0d2d7044162": {
+      "source_id": "hnrss",
+      "title": "Create an MP4 video of a web page scrolling at a steady speed",
+      "url": "https://github.com/upenn/web-scroll-video",
+      "category": "dev",
+      "published_at": "2026-05-02T01:26:38+00:00",
+      "posted_at": "2026-05-02T06:00:15.965936+00:00",
+      "message_id": "1500014049642156082"
+    },
+    "5bd207c5b1271c89dabb4dcbbd188f34": {
+      "source_id": "bleepingcomputer",
+      "title": "Critrical cPanel flaw mass-exploited in \"Sorry\" ransomware attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
+      "category": "cyber",
+      "published_at": "2026-05-02T20:54:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "47dd4a419866e0a303f3c3f5ae3b9668": {
+      "source_id": "bleepingcomputer",
+      "title": "ConsentFix v3 attacks target Azure with automated OAuth abuse",
+      "url": "https://www.bleepingcomputer.com/news/security/consentfix-v3-attacks-target-azure-with-automated-oauth-abuse/",
+      "category": "cyber",
+      "published_at": "2026-05-02T13:32:25+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "cfedcd6943cd50ed5e173d9a9e484dec": {
+      "source_id": "bleepingcomputer",
+      "title": "Windows 11 KB5083631 update released with 34 changes and fixes",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5083631-update-released-with-34-changes-and-fixes/",
+      "category": "cyber",
+      "published_at": "2026-05-01T09:00:53+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "70307b8647148122767c4ad939229880": {
+      "source_id": "bleepingcomputer",
+      "title": "FBI links cybercriminals to sharp surge in cargo theft attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-cybercriminals-to-sharp-surge-in-cargo-theft-attacks/",
+      "category": "cyber",
+      "published_at": "2026-04-30T15:32:18+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "898fc975949d5cb8668adbc94fd6b31c": {
+      "source_id": "bleepingcomputer",
+      "title": "April KB5083769 Windows 11 update causes backup software failures",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/april-kb5083769-windows-11-update-causes-backup-software-failures/",
+      "category": "cyber",
+      "published_at": "2026-04-30T14:23:03+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "5093bc6354427b143ed1d4647efa4797": {
+      "source_id": "hackernews-cyber",
+      "title": "Trellix Confirms Source Code Breach With Unauthorized Repository Access",
+      "url": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
+      "category": "cyber",
+      "published_at": "2026-05-02T05:41:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "7311541bab2e5fa25bba5dd27f161bc3": {
+      "source_id": "hackernews-cyber",
+      "title": "Two Cybersecurity Professionals Get 4-Year Sentences in BlackCat Ransomware Attacks",
+      "url": "https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html",
+      "category": "cyber",
+      "published_at": "2026-05-01T08:56:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "cd2643a4ad5b1006b737d73c341afdbb": {
+      "source_id": "hackernews-cyber",
+      "title": "PyTorch Lightning and Intercom-client Hit in Supply Chain Attacks to Steal Credentials",
+      "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+      "category": "cyber",
+      "published_at": "2026-04-30T15:31:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "6fc014d0c93f3615e6a95db9a827d6f7": {
+      "source_id": "hackernews-cyber",
+      "title": "New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials",
+      "url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html",
+      "category": "cyber",
+      "published_at": "2026-04-30T11:36:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "646f5c3db3bc4cd6a422f41a4242f15d": {
+      "source_id": "hackernews-cyber",
+      "title": "New Linux 'Copy Fail' Vulnerability Enables Root Access on Major Distributions",
+      "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+      "category": "cyber",
+      "published_at": "2026-04-30T08:24:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381404117205113"
+    },
+    "c412d394b0e233420a64c5707eb9a605": {
+      "source_id": "journalduhacker",
+      "title": "Git par la pratique - cours gratuit en ligne",
+      "url": "https://formations.microlinux.fr/git/a-propos/",
+      "category": "dev",
+      "published_at": "2026-05-02T08:39:44+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "f9bf4b1185e6110c50197cc1cd8d4eac": {
+      "source_id": "hnrss",
+      "title": "Kimi K2.6 just beat Claude, GPT-5.5, and Gemini in a coding challenge",
+      "url": "https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/",
+      "category": "dev",
+      "published_at": "2026-05-03T03:05:28+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "7874003e46eefe1235d49f4ced26b2e6": {
+      "source_id": "hnrss",
+      "title": "Windows API Is Successful Cross-Platform API",
+      "url": "https://retrocoding.net/windows-api-is-successful-cross-platform-api",
+      "category": "dev",
+      "published_at": "2026-05-03T01:53:29+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "762ef4875c5ecb967cf36521974e943c": {
+      "source_id": "hnrss",
+      "title": "Open source does not imply open community",
+      "url": "https://blog.feld.me/posts/2026/04/open-source-does-not-imply-open-community/",
+      "category": "dev",
+      "published_at": "2026-05-03T01:36:09+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "74aea55f3e11db7fc92932d99fbce5a4": {
+      "source_id": "hnrss",
+      "title": "Care Homes and Hotels in Japan Shut as Expansion Strategy Unravels",
+      "url": "https://www.newsonjapan.com/article/149075.php",
+      "category": "dev",
+      "published_at": "2026-05-03T00:38:38+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "cb0b3370002eb1d0a8ae81be27b4c5da": {
+      "source_id": "hnrss",
+      "title": "Maryland Is First to Ban A.I.-Driven Price Increases in Grocery Stores",
+      "url": "https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
+      "category": "dev",
+      "published_at": "2026-05-03T00:24:09+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "2ab5f479771fecf0c70d30f66c4423d1": {
+      "source_id": "hnrss",
+      "title": "Clandestine network smuggling Starlink tech into Iran to beat internet blackout",
+      "url": "https://www.bbc.com/news/articles/cvgzk91leweo",
+      "category": "dev",
+      "published_at": "2026-05-03T00:22:41+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "500bff0efaf2d059f5219a82f4ffa107": {
+      "source_id": "hnrss",
+      "title": "A Couple Million Lines of Haskell: Production Engineering at Mercury",
+      "url": "https://blog.haskell.org/a-couple-million-lines-of-haskell/",
+      "category": "dev",
+      "published_at": "2026-05-02T23:01:14+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "ff27746735b1441b238b27a8a0f70eb6": {
+      "source_id": "hnrss",
+      "title": "Voice-AI-for-Beginners – A curated learning path for developers",
+      "url": "https://github.com/mahimairaja/voiceai",
+      "category": "dev",
+      "published_at": "2026-05-02T21:03:15+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "449a35a728e34469192d2f49eac12e3e": {
+      "source_id": "hnrss",
+      "title": "Clojurists Together – Q2 2026 Open Source Funding Announcement",
+      "url": "https://www.clojuriststogether.org/news/q2-2026-funding-announcement/",
+      "category": "dev",
+      "published_at": "2026-05-02T20:34:49+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381406713483437"
+    },
+    "0dcdf5720fc5721219150f6cf88b3f44": {
+      "source_id": "numerama",
+      "title": "Les drôles de prédictions d’une IA bloquée en 1930, une curieuse voiture électrique à réaction & le test du quadricycle français Ipop – le récap’ de la semaine",
+      "url": "https://www.numerama.com/vroom/2245555-les-droles-de-predictions-dune-ia-bloquee-en-1930-une-curieuse-voiture-electrique-a-reaction-le-test-du-quadricycle-francais-ipop-le-recap-de-la-semaine.html",
+      "category": "tech",
+      "published_at": "2026-05-03T04:32:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "d4257d648e6d8e76c4ba4281fec2249b": {
+      "source_id": "numerama",
+      "title": "Au fait, pourquoi Anthropic s’appelle Anthropic ?",
+      "url": "https://www.numerama.com/tech/2235391-au-fait-pourquoi-anthropic-sappelle-anthropic.html",
+      "category": "tech",
+      "published_at": "2026-05-02T11:02:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "9e15c055b6083e678a2d9b9cb57d530b": {
+      "source_id": "numerama",
+      "title": "Spaceship France : CNES lance un appel à projet pour une cuisine spatiale",
+      "url": "https://www.numerama.com/sciences/2244967-spaceship-france-cnes-lance-un-appel-a-projet-pour-une-cuisine-spatiale.html",
+      "category": "tech",
+      "published_at": "2026-05-02T15:28:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "68df7b2262a26ce29158a36fbd77836c": {
+      "source_id": "numerama",
+      "title": "J’ai essayé le Ford Capri : son plus gros défaut n’est même pas de sa faute",
+      "url": "https://www.numerama.com/vroom/2242529-jai-essaye-le-ford-capri-son-plus-gros-defaut-nest-meme-pas-de-sa-faute.html",
+      "category": "tech",
+      "published_at": "2026-05-02T14:00:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "f62c3b3d488803b5b98f7f8a14eb3a84": {
+      "source_id": "numerama",
+      "title": "La revanche de la Comtesse",
+      "url": "https://www.numerama.com/tech/2245489-la-revanche-de-la-comtesse.html",
+      "category": "tech",
+      "published_at": "2026-05-02T13:30:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "b156a47879a06398670acb45a965680f": {
+      "source_id": "numerama",
+      "title": "Anatomie d’un nuage : comment naissent les gouttes de pluie ?",
+      "url": "https://www.numerama.com/sciences/2244067-anatomie-dun-nuage-comment-naissent-les-gouttes-de-pluie.html",
+      "category": "tech",
+      "published_at": "2026-05-02T12:32:00+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "0d30ba6433effc8bc979bc586d3c4acf": {
+      "source_id": "numerama",
+      "title": "Vous avez reçu ce SMS après l’achat d’une voiture électrique ? Ce n’est pas une arnaque",
+      "url": "https://www.numerama.com/vroom/2245731-vous-avez-recu-ce-sms-apres-lachat-dune-voiture-electrique-ce-nest-pas-une-arnaque.html",
+      "category": "tech",
+      "published_at": "2026-05-02T09:52:56+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "12db7d08af41fc1ba77477c0e8429030": {
+      "source_id": "numerama",
+      "title": "Phénomène lumineux dans le ciel le 1er mai : ce n’était pas un ovni",
+      "url": "https://www.numerama.com/sciences/2245713-phenomene-lumineux-dans-le-ciel-le-1er-mai-ce-netait-pas-un-ovni.html",
+      "category": "tech",
+      "published_at": "2026-05-02T08:19:22+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "dfefc74156694ad5fb594295f3fedf51": {
+      "source_id": "numerama",
+      "title": "Renault devance très largement ses concurrents sur la voiture électrique en avril",
+      "url": "https://www.numerama.com/vroom/2245705-renault-devance-tres-largement-ses-concurrents-sur-la-voiture-electrique-en-avril.html",
+      "category": "tech",
+      "published_at": "2026-05-02T07:23:56+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    },
+    "abb3cb429417862d4098c61596f59d4d": {
+      "source_id": "arstechnica",
+      "title": "Research roundup: 6 cool science stories we almost missed",
+      "url": "https://arstechnica.com/science/2026/05/research-roundup-6-cool-science-stories-we-almost-missed-4/",
+      "category": "tech",
+      "published_at": "2026-05-02T13:23:31+00:00",
+      "posted_at": "2026-05-03T06:20:00.882547+00:00",
+      "message_id": "1500381409775190087"
+    }
+  },
+  "fetch_state": {
+    "cert-fr": {
+      "last_fetched_at": "2026-05-03T06:19:53.795129+00:00",
+      "last_etag": "\"b86f1ae8b6d7f93ac1a010cede5f9a29\"",
+      "last_modified": "Thu, 30 Apr 2026 13:58:00 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "krebs": {
+      "last_fetched_at": "2026-05-03T06:19:53.767764+00:00",
+      "last_etag": null,
+      "last_modified": "Sat, 02 May 2026 05:58:03 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "hackernews-cyber": {
+      "last_fetched_at": "2026-05-03T06:19:53.868309+00:00",
+      "last_etag": null,
+      "last_modified": "Sun, 3 May 2026 05:35:14 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "bleepingcomputer": {
+      "last_fetched_at": "2026-05-03T06:19:53.874355+00:00",
+      "last_etag": "0c16f99e0c105a6d6bea87fb7d3c7afb",
+      "last_modified": "Sun, 03 May 2026 06:14:14 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "zataz": {
+      "last_fetched_at": "2026-05-03T06:19:54.127148+00:00",
+      "last_etag": "\"e4eaaf6a516d008b930c38f7e7847db8-gzip\"",
+      "last_modified": "Sat, 02 May 2026 11:00:26 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "anthropic-news": {
+      "last_fetched_at": "2026-05-03T06:20:00.856702+00:00",
+      "last_etag": "W/\"2fbb5-SfZETlZujXvPkJRD8WaS1VcmwU0\"",
+      "last_modified": "Sun, 03 May 2026 06:20:01 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "openai-news": {
+      "last_fetched_at": "2026-05-03T06:19:54.966223+00:00",
+      "last_etag": null,
+      "last_modified": null,
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "huggingface-blog": {
+      "last_fetched_at": "2026-05-03T06:19:54.054154+00:00",
+      "last_etag": "W/\"37667-xQVaTgTnOVRxJB3Q/NFa/qVmock\"",
+      "last_modified": null,
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "actuia": {
+      "last_fetched_at": "2026-05-03T06:19:54.135340+00:00",
+      "last_etag": null,
+      "last_modified": null,
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "github-blog": {
+      "last_fetched_at": "2026-05-03T06:19:53.886490+00:00",
+      "last_etag": "W/\"7bd5dcd945b67b1cce1b36e1a332cec0\"",
+      "last_modified": "Sat, 02 May 2026 00:15:48 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "stackoverflow-blog": {
+      "last_fetched_at": "2026-05-03T06:19:53.921822+00:00",
+      "last_etag": "\"c48a9d6818f393f6622b13032c3fc957-ssl-df\"",
+      "last_modified": null,
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "realpython": {
+      "last_fetched_at": "2026-05-03T06:19:54.054154+00:00",
+      "last_etag": null,
+      "last_modified": "Sun, 03 May 2026 06:08:37 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "journalduhacker": {
+      "last_fetched_at": "2026-05-03T06:19:54.145420+00:00",
+      "last_etag": "W/\"c8a89763d7d9f5fce051a24f41901057\"",
+      "last_modified": null,
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "hnrss": {
+      "last_fetched_at": "2026-05-03T06:19:54.401875+00:00",
+      "last_etag": null,
+      "last_modified": "Sun, 03 May 2026 04:05:28 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "linuxfr": {
+      "last_fetched_at": "2026-05-03T06:19:55.116121+00:00",
+      "last_etag": "\"69f6deeb-732ef\"",
+      "last_modified": "Sun, 03 May 2026 05:36:43 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "numerama": {
+      "last_fetched_at": "2026-05-03T06:19:53.918796+00:00",
+      "last_etag": "W/\"6802fb2512f938126e7df71522b30655\"",
+      "last_modified": "Sun, 03 May 2026 05:32:00 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "next-ink": {
+      "last_fetched_at": "2026-05-03T06:19:54.780471+00:00",
+      "last_etag": "\"af301f4a5023ace228c0a758f6190d6e\"",
+      "last_modified": "Sat, 02 May 2026 10:17:54 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "arstechnica": {
+      "last_fetched_at": "2026-05-03T06:19:54.074354+00:00",
+      "last_etag": null,
+      "last_modified": "Sat, 2 May 2026 15:45:19 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "korben": {
+      "last_fetched_at": "2026-05-03T06:19:54.120392+00:00",
+      "last_etag": null,
+      "last_modified": "Sat, 02 May 2026 08:40:52 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    },
+    "frandroid": {
+      "last_fetched_at": "2026-05-03T06:19:53.957725+00:00",
+      "last_etag": "W/\"9922d63c7e1d83015f27e9af5ee11d64\"",
+      "last_modified": "Sun, 03 May 2026 05:54:00 GMT",
+      "last_error": null,
+      "consecutive_errors": 0
+    }
+  },
+  "last_digest_at": "2026-05-03T06:20:00.882547+00:00"
+}

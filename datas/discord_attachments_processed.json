@@ -1,0 +1,152 @@
+{
+  "channels": {
+    "1466809167267364989": {
+      "name": "🎧・td-audio-an1",
+      "processed": [
+        {
+          "filename": "TD21_AN1_2704.m4a",
+          "md5": "86f7c69a535fa106138a3157430ad873",
+          "message_id": "1498308918340882463",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_INBOX\\TD21_AN1_2704.m4a",
+          "size": 65177111,
+          "ts": "2026-04-27T13:23:47+00:00"
+        },
+        {
+          "filename": "TD20_AN1_0804.m4a",
+          "md5": "89982ab8dd818bf45a3bd071f392d9ec",
+          "message_id": "1491447981810122906",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_INBOX\\TD20_AN1_0804.m4a",
+          "size": 72410611,
+          "ts": "2026-04-27T13:24:00+00:00"
+        },
+        {
+          "filename": "TD19_AN1_0704.m4a",
+          "md5": "5f003e028cc65171028ea8b62c0b0f2e",
+          "message_id": "1491183305020805430",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_INBOX\\TD19_AN1_0704.m4a",
+          "size": 68807060,
+          "ts": "2026-04-27T13:24:16+00:00"
+        },
+        {
+          "filename": "TD18_AN1_3103.m4a",
+          "md5": "b7824d81444c2e92b9c95b7444f958f5",
+          "message_id": "1491182244784508988",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_INBOX\\TD18_AN1_3103.m4a",
+          "size": 64814605,
+          "ts": "2026-04-27T13:24:31+00:00"
+        },
+        {
+          "filename": "TD17_AN1_3003.m4a",
+          "md5": "4129a11da0a654db2fb409a668632b0c",
+          "message_id": "1488206264021286995",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_INBOX\\TD17_AN1_3003.m4a",
+          "size": 71973043,
+          "ts": "2026-04-27T13:26:03+00:00"
+        }
+      ]
+    },
+    "1498322893036327003": {
+      "name": "inbox-an1",
+      "processed": [
+        {
+          "filename": "IMG_20260427_160122.jpg",
+          "md5": "4c16f6d889a47e13584ef719d4b8ecb1",
+          "message_id": "1498323729795645480",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160122.jpg",
+          "size": 399562,
+          "ts": "2026-04-27T14:07:53+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160237.jpg",
+          "md5": "e41a98ab2432739d04d72370632302b0",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160237.jpg",
+          "size": 419620,
+          "ts": "2026-04-27T14:10:14+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160241.jpg",
+          "md5": "cbc2d93301c16b0b674019e0fa13522f",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160241.jpg",
+          "size": 401723,
+          "ts": "2026-04-27T14:10:14+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160248.jpg",
+          "md5": "4f993b5b5b03f18abb11bcdaa0d22536",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160248.jpg",
+          "size": 441633,
+          "ts": "2026-04-27T14:10:15+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160252.jpg",
+          "md5": "cae57ed3e289d7476fb7cfbca0fd0494",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160252.jpg",
+          "size": 416396,
+          "ts": "2026-04-27T14:10:15+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160257.jpg",
+          "md5": "57d071af5bb7117bff98f86d4d892504",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160257.jpg",
+          "size": 410680,
+          "ts": "2026-04-27T14:10:15+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160305.jpg",
+          "md5": "a65c967389ddab0edc91a68d3e2bff4d",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160305.jpg",
+          "size": 355685,
+          "ts": "2026-04-27T14:10:16+00:00"
+        },
+        {
+          "filename": "IMG_20260427_160310.jpg",
+          "md5": "1c8fbf731a1b788b7c0c8976f88a3aa7",
+          "message_id": "1498325291100012627",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\IMG_20260427_160310.jpg",
+          "size": 333431,
+          "ts": "2026-04-27T14:10:17+00:00"
+        },
+        {
+          "filename": "TD22_AN1_3004.m4a",
+          "md5": "27586e1b3da1ae103806c83b317fc4f7",
+          "message_id": "1499330555555348603",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\an1\\TD22_AN1_3004.m4a",
+          "size": 41107042,
+          "ts": "2026-05-03T18:05:37+00:00"
+        }
+      ]
+    },
+    "1498322898778329201": {
+      "name": "inbox-prg2",
+      "processed": [
+        {
+          "filename": "PRG2_TD7_2804.m4a",
+          "md5": "9414da57042348badd52a442bad51bdd",
+          "message_id": "1498588882147475510",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\prg2\\PRG2_TD7_2804.m4a",
+          "size": 69277047,
+          "ts": "2026-04-28T07:39:49+00:00"
+        }
+      ]
+    },
+    "1498322902821634149": {
+      "name": "inbox-psi",
+      "processed": [
+        {
+          "filename": "PSI_CM12_2704.m4a",
+          "md5": "af5982f24ac3998a08dc717edbf75aae",
+          "message_id": "1500558022899138754",
+          "ranged_to": "C:\\Users\\Gstar\\OneDrive\\Documents\\COURS\\_inbox_dl\\psi\\PSI_CM12_2704.m4a",
+          "size": 65865551,
+          "ts": "2026-05-03T18:06:41+00:00"
+        }
+      ]
+    }
+  }
+}

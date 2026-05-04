@@ -1,0 +1,373 @@
+PRESENTATION ECOSYSTEME BotGSTAR — Pour Claude.ai
+==================================================
+
+Ce fichier est destiné à Claude.ai (chat web) pour lui donner du contexte
+sur ce que j'ai déjà construit, au-delà du seul projet COURS dont il a
+le README.md et le CLAUDE.md. Objectif : qu'il calibre son niveau de
+délégation et ses propositions sur la base réelle de mes capacités, pas
+sur l'image d'un débutant.
+
+J'ai écrit la quasi-totalité de ce code en collaboration avec Claude
+Code (CLI). Je sais lire/modifier/déboguer le Python, je sais lancer un
+script, je sais quand un truc est cassé. Je ne suis pas un dev senior
+mais je ne suis pas un consommateur passif non plus — je conçois
+l'archi, je rédige les CLAUDE.md, je décide quoi coder, et Claude Code
+exécute.
+
+
+1. LE TRUC SYMPA QUE JE VOULAIS TE MONTRER : start_summarize_gui.vbs
+====================================================================
+
+Localisation : Arsenal_Arguments/start_summarize_gui.vbs (lanceur
+silencieux 17 lignes) → Arsenal_Arguments/summarize_gui.py (1155 lignes,
+GUI Tkinter principale).
+
+Ce que ça fait, en bref : double-clic sur le .vbs → ouverture d'une
+fenêtre Tkinter sans console qui pilote le batch summarize.py
+(résumeur IA des contenus politiques téléchargés depuis TikTok / IG /
+YouTube / X / Reddit / Threads). Mais le truc intéressant que je
+voulais te montrer, c'est le panneau "Quota Pro Max" intégré.
+
+Le panneau Quota Pro Max
+------------------------
+
+Mon abonnement Claude Max 5x (≈ 100 €/mois) m'expose un endpoint privé
+non documenté à :
+
+    GET https://claude.ai/api/organizations/{ORG_UUID}/usage
+
+Cet endpoint renvoie un JSON avec :
+- five_hour.utilization        → ma session 5h en cours (0-100%)
+- five_hour.resets_at          → ISO 8601 timestamp du reset
+- seven_day.utilization        → mon hebdo 7j Opus (0-100%)
+- seven_day.resets_at          → reset hebdo
+- seven_day_sonnet.utilization → mon hebdo Sonnet (0-100%)
+- extra_usage.*                → l'overage credits si activé
+
+Je l'ai trouvé en sniffant l'onglet Network du DevTools Chrome quand
+j'ouvre claude.ai/settings/usage. C'est le même endpoint que Claude.ai
+utilise pour afficher les barres dans la page Settings.
+
+Le module qui scrape ça : Arsenal_Arguments/claude_usage.py (409 lignes).
+Caractéristiques :
+
+a) Cookie de session chiffré localement via Windows DPAPI
+   (CryptProtectData / CryptUnprotectData de pywin32) — pas de mot de
+   passe stocké, le blob est lié à ma session Windows et illisible
+   depuis un autre compte ou si on copie le fichier ailleurs. Stocké
+   dans Arsenal_Arguments/_secrets/claude_session.bin. La 1ère fois
+   je colle le cookie depuis DevTools (request → Headers → cookie:),
+   ensuite c'est transparent.
+
+b) Cloudflare bypass propre, sans curl_cffi ni TLS fingerprinting.
+   J'imite Chrome 147 avec les bons headers : sec-ch-ua-*,
+   sec-fetch-*, priority, anthropic-anonymous-id,
+   anthropic-client-platform=web_claude_ai, anthropic-device-id, etc.
+   Le cookie __cf_bm (~30 min) et cf_clearance (~1h) expirent vite
+   donc je dois recopier toutes les ~30 min en théorie — en pratique
+   je ne le fais qu'une fois par session de travail.
+
+c) Exposé via CLI standalone :
+       python claude_usage.py --set-cookie    (saisie masquée)
+       python claude_usage.py --fetch         (affiche le quota live)
+       python claude_usage.py --state         (seuils + throttle)
+       python claude_usage.py --clear
+
+d) Et dans la GUI Tkinter, un thread daemon poll cet endpoint toutes
+   les 60 secondes et met à jour 4 progress bars en live :
+   - Session 5h
+   - Hebdo 7j (Opus)
+   - Hebdo Sonnet
+   - Overage credits
+
+   Avec deux Spinbox pour configurer mes seuils (défauts 70% session
+   / 80% hebdo). Quand je dépasse mon seuil session pendant un batch
+   summarize, la GUI auto-stop le subprocess en cours (via
+   psutil.suspend récursif sur l'arbre de processus), affiche un
+   bandeau orange, et auto-resume quand le quota redescend ou se
+   reset. Quand je dépasse l'hebdo, c'est un throttle persistant
+   (état JSON atomic write dans _secrets/quota_state.json) qui
+   survit aux restarts GUI — bouton "Reset throttle hebdo" avec
+   confirmation modale pour le débloquer manuellement.
+
+e) Le même mécanisme est branché côté pipeline backend : le cog
+   Discord arsenal_pipeline.py appelle _check_quota_before_summarize()
+   avant chaque spawn de summarize.py. Si quota dépassé → embed
+   orange dans le salon Discord #logs, étape skip, pas de spam de
+   l'API. Mode tolérant si le check échoue (cookie absent, network)
+   pour pas bloquer le pipeline sur une panne du watcher.
+
+Pourquoi c'est utile
+--------------------
+
+Avec Max 5x, le quota hebdo est mon vrai goulot. Je peux brûler 80%
+en 2h de batch summarize si je fais pas attention, et après je suis
+à sec pour la semaine. Ce panneau me permet de :
+- voir en live où j'en suis (sans ouvrir un onglet claude.ai)
+- éviter de me retrouver bloqué à 22h en plein boulot
+- choisir consciemment de switcher CLI subscription → API Anthropic
+  payante quand je suis proche du plafond mais que j'ai du boulot
+  urgent (radio button "Moteur" persistant via
+  _secrets/engine_pref.json, partagé entre la GUI et le pipeline
+  Discord — quand je coche API dans la GUI, le pipeline switche aussi
+  au prochain drop).
+
+C'est le genre d'astuce que j'ai construit à l'usage. Pas un truc
+trouvé tel quel sur internet — j'ai trouvé l'endpoint, j'ai compris
+les headers Cloudflare, j'ai écrit le wrapper, j'ai branché la GUI,
+j'ai branché le pipeline.
+
+
+2. CE QUE J'AI CONSTRUIT AU TOTAL (au-delà de COURS)
+=====================================================
+
+Tu n'as eu en contexte que /COURS — le pipeline pédagogique que je te
+montre comme référence d'archi. Mais BotGSTAR contient 5 cogs Discord
+et plusieurs sous-systèmes. Voici ce que tu ne vois pas :
+
+Cog 1 — cours_pipeline.py (~5000 lignes)
+----------------------------------------
+Le pipeline COURS que tu connais : 24 commandes !cours, watcher
+auto polling 60s sur les corrections PDF, watchdog _INBOX qui range
+les fichiers selon leur naming, forums Discord avec versionning
+MD5 et tags auto, idempotence sur tout, schema JSON v2 atomic
+write. C'est le plus mature.
+
+Cog 2 — veille_rss.py (~1500 lignes)
+------------------------------------
+Système de veille RSS technique. 4 catégories
+(cyber/ia/dev/tech-news). Sources éditables via YAML
+(rss_sources.yaml) + via commandes Discord !veille sources add/etc
+(ruamel.yaml preserve-roundtrip — commentaires conservés).
+Scoring par mots-clés (boost + blacklist par catégorie),
+fenêtre de fraîcheur ajustée par catégorie (24h tech, 72h pour
+cyber/ia/dev qui publient moins souvent). Auto-désactivation source
+après 5 erreurs HTTP consécutives. Digest matinal à 8h00 Paris,
+scheduler tasks.loop avec catch-up si bot démarré après 8h.
+Atomic write rss_state.json, dédup MD5 sur 30 jours.
+
+Cog 3 — veille_rss_politique.py (~1500 lignes)
+----------------------------------------------
+Architecture jumelle de veille_rss.py mais 7 catégories politiques
+USAGE-orientées (j'appelle ça "Option C") : actu-chaude, économie,
+écologie, international, social, débats-politiques, médias.
+40 sources françaises vérifiées (Mediapart, Le Monde, Acrimed,
+Reporterre, Frustration, CheckNews, etc.). Cible : me construire un
+arsenal d'arguments pro-LFI / Union Populaire / critique des médias
+dominants — usage perso pour mes débats, pas un canal public.
+
+Cog 4+5 — arsenal_pipeline.py + arsenal_publisher.py
+-----------------------------------------------------
+Le gros morceau. Pipeline complet de veille vidéo politique sur 6
+plateformes :
+- arsenal_pipeline.py : listener Discord sur le salon #liens (public
+  lecture, écriture admin only). Quand je drop une URL TikTok / IG /
+  YouTube / X / Reddit / Threads, le bot lance la chaîne :
+  download (yt-dlp ou gallery-dl en fallback) → normalize CSV →
+  Whisper transcribe (faster-whisper large-v3 GPU RTX 2060 int8_float16
+  + VAD) → résumé Claude (CLI subscription ou API Anthropic, choix
+  switchable) → publication forum.
+- arsenal_publisher.py : poste les résumés dans des forums Discord
+  thématiques (12 forums politiques fins : économie-et-social,
+  culture-et-éducation, justice-et-libertés, féminisme-et-luttes,
+  histoire-et-géopolitique, etc.). Tags auto, embed structuré,
+  attachement transcription + médias quand <10 Mo. Auto-sync
+  tasks.loop(seconds=15) qui poll le mtime du CSV et déclenche la
+  publication dès qu'un résumé apparaît, avec anti-boucle (cooldown
+  si 3+ FAILED dans les 5 dernières minutes). Auto-archive
+  tasks.loop(hours=1) qui archive les vieux threads quand la guilde
+  dépasse 900/1000 threads actifs (limite Discord serveurs
+  non-boostés).
+
+Whitelist forums + alias map (Phase Y.6) : 14 forums canoniques + ~35
+variantes connues que Claude écrit parfois (ex "Éducation" promu en
+thème principal alors qu'il devrait être "Culture et Éducation >
+Politique éducative"). Sans la whitelist, ça créait des forums
+orphelins à 1 thread. Maintenant l'alias map les route correctement,
+fallback "catégorie-libre" pour les patterns nouveaux que je découvre
+au fil de l'usage.
+
+Persistance JSON map source_id→thread_id
+(datas/arsenal_published_threads.json) pour empêcher les dupes en cas
+de race condition CSV. Bootstrap initial via lecture des starter
+messages des 1059 threads forum existants.
+
+
+3. INFRA AUTOUR (tray, watchdog, restart auto)
+================================================
+
+bot_tray.py + start_tray.vbs
+-----------------------------
+Process parent qui spawne python -u bot.py en subprocess sans console
+(CREATE_NO_WINDOW). Capture stdout/stderr → fichier log + buffer
+mémoire deque(maxlen=4000) pour la fenêtre logs Tk. Auto-restart 10s
+après crash, toast Windows à chaque crash + redémarrage manuel. Icône
+tray colorée selon BotState (vert RUNNING / orange PAUSED / rouge
+CRASHED_WAITING / bleu RESTARTING). Menu clic droit avec 8 entrées
+(voir logs, ouvrir dossiers, pause-reprise, redémarrer, démarrer avec
+Windows, quitter). Auto-démarrage Windows géré par le menu lui-même
+(VBS écrit dans Startup\). Lanceur silencieux start_tray.vbs détecte
+pythonw.exe via PATH ou chemin par défaut. taskkill /F /T /PID pour
+tuer proprement l'arbre de processus.
+
+start_bot.bat (mode debug)
+---------------------------
+Sémantique "click = restart" : au lancement, tue toute autre instance
+(par WINDOWTITLE et par cmdline bot.py) avant de prendre la main. La
+fenêtre courante est protégée car elle n'a pas encore le titre cible
+au moment du taskkill.
+
+
+4. SCRIPTS COMPAGNONS DU PIPELINE ARSENAL
+==========================================
+
+whisper_supervisor.py — Surveille Whisper en cours, auto-restart si
+stall > 15 min, isole les vidéos qui font hanger libav vers
+_corrupted_videos/. Log Discord embeds à chaque event.
+
+progress_monitor.py — Surveille un glob (par ex
+02_whisper_transcripts/*.txt), poste un embed Discord par fichier
+traité avec metadata Whisper parsées depuis session.log
+(audio_duration, transcribe_time, ratio, segments, langue détectée).
+Mode --kind whisper|ocr|generic.
+
+post_whisper_orchestrator.py — Attend que whisper_supervisor.log
+contienne [done], puis chaîne OCR carrousels + audit final. Posts
+récap Discord.
+
+arsenal_retry_failed.py — Rattrape les download_status=FAILED du CSV
+avec déduplication par (plateforme, id) sur le timestamp le plus
+récent, relance via le bon downloader, profite des fixes
+gallery-dl + yt-dlp 2026.03. Modes --apply / --limit / --platform /
+dry-run par défaut.
+
+ocr_carousels.py — OCR easyocr (fr+en, GPU) sur les slides image des
+carrousels Instagram → 02_whisper_transcripts/<id>_ocr.txt.
+
+arsenal_audit.py — Audit santé pipeline (CSV, transcriptions,
+summaries) avec --fix-csv pour réparer les incohérences détectées.
+
+arsenal_agent.py — Agent Flask port 5679, pont n8n Docker ↔ Windows.
+
+arsenal_config.py — Module centralisé : tous les chemins, colonnes
+CSV (25), helpers, ScriptResult, get_logger. Tous les autres scripts
+importent de là, jamais de chemin en dur.
+
+
+5. CONNAISSANCES TECHNIQUES OPÉRATIONNELLES
+=============================================
+
+Ce que je manipule au quotidien et que je comprends :
+
+- Python 3.12 sur Windows 10/11
+- discord.py (cogs, listeners, tasks.loop, hybrid commands, forum
+  threads, tags, permissions, embeds, files attachments)
+- faster-whisper avec CUDA RTX 2060 6 Go, int8_float16, VAD,
+  modèle large-v3
+- yt-dlp + cookies Netscape pour TikTok / Instagram (carrousels) /
+  YouTube / X / Reddit / Threads, avec multiples fallbacks
+  (manifest probe ?img_index=N, gallery-dl en backup, thumbnail
+  direct fallback)
+- API Anthropic (anthropic SDK Python) ET Claude Code CLI
+  subscription via subprocess avec ANTHROPIC_API_KEY UNSET dans
+  l'env pour forcer OAuth/keychain
+- aiohttp pour fetchs RSS asynchrones
+- feedparser pour parsing RSS/Atom
+- ruamel.yaml >= 0.18 pour preserve-roundtrip YAML (commentaires
+  + ordre conservés lors des modifs programmatiques)
+- ZoneInfo("Europe/Paris") timezone-aware
+- atomic write JSON/YAML (.tmp + os.replace)
+- Tkinter (Canvas + Scrollbar pour fenêtres scrollables, Spinbox,
+  Text widget en console tail, daemon threads pour polling
+  background sans freeze UI)
+- Windows DPAPI via pywin32 (CryptProtectData / CryptUnprotectData)
+- psutil pour suspend récursif (pause subprocess + tous ses
+  enfants), kill arbre de processus
+- requests avec User-Agent/headers Chrome pour bypass Cloudflare
+  niveau "détection minimale" (sans curl_cffi)
+
+Architecture & patterns :
+- Pipeline data-driven sur CSV source de vérité (suivi_global.csv,
+  25 colonnes, 3 statuts PENDING/SUCCESS/FAILED)
+- Idempotence par MD5 partout où je publie sur Discord (skip si
+  fichier inchangé, versioning auto avec préfixe "Version N" si
+  changé)
+- Schémas JSON versionnés (schema_version: 2 pour discord_published,
+  schema_version: 1 pour perso) avec migration douce
+- Locks fichier inter-process (vérifient PID encore vivant avant
+  de refuser)
+- Auto-archive logique (threads Discord vieux quand on s'approche
+  des limites de quota Discord)
+- Queue de publication via dossier _publish_queue/*.json scanné par
+  watcher (manifest format ouvert, deux modes : canonique = invoque
+  les méthodes officielles du cog / freeform = post ad-hoc)
+- Pattern "what manual mode does = what auto mode does" : aucune
+  logique parallèle, l'auto invoque toujours les mêmes méthodes
+  que la commande Discord manuelle
+
+Workflow Claude Code que j'utilise :
+- Je rédige les CLAUDE.md des projets (le manuel d'instructions
+  permanent, lu à chaque session)
+- Je rédige les README.md (mon guide d'utilisation)
+- Je rédige les PROMPT_SYSTEME_*.md pour les générations IA
+  (corrections PDF, résumés vidéo) — ça reste sous mon contrôle,
+  Claude Code n'écrit jamais le contenu pédagogique, juste le code
+  qui l'orchestre
+- Claude Code code l'orchestrateur, les watchers, les helpers,
+  l'intégration API
+- Je garde le contrôle sur l'archi, les nommages, les conventions
+- Les "Phases" (A, B, C... actuellement à Y.16) sont des marqueurs
+  d'évolution datés dans CHANGELOG.md + dans les CLAUDE.md, pour
+  que je retrouve facilement le contexte d'une décision plus tard
+
+
+6. CONTEXTE PERSO UTILE
+=========================
+
+- 26 ans, étudiant L1 Informatique-Électronique à l'ISTIC Rennes
+  (Université de Rennes 1), reprise d'études
+- Sympathisant LFI / Union Populaire avec une lecture critique
+  (j'aime les analyses internes type Frustration, Acrimed, pas le
+  catéchisme militant)
+- Perfectionniste, autonome, je préfère qu'on me laisse les mains
+  libres ("100% les droits") plutôt qu'on me pose 15 questions
+  avant d'agir — mais je veux comprendre ce qu'il se passe et je
+  veux apprendre en construisant
+- Quand un truc casse, je préfère qu'on cherche le root cause
+  (cookie expiré, config foireuse) avant d'installer une grosse
+  dépendance ou de refactorer
+- Je commande vocalement Claude Code parfois (TTS à venir ?) mais
+  je tape encore principalement
+- J'ai un setup Windows + RTX 2060, pas un Mac — donc les
+  recommandations "macOS only" ne s'appliquent pas chez moi
+- Mes prochains gros chantiers : compagnon de révision oral pour
+  CC3 dans 2 mois (objet de notre conversation actuelle), et
+  poursuite de l'enrichissement Arsenal Intelligence Unit
+
+
+7. CE QUE J'ATTENDS DE TOI (Claude.ai)
+========================================
+
+- Tu rédiges l'archi et les CLAUDE.md / PROMPT_SYSTEME des nouveaux
+  projets ; Claude Code (CLI) exécute le code
+- Tu peux me parler comme à quelqu'un qui comprend le code et
+  l'archi — pas la peine de m'expliquer ce qu'est un thread daemon
+  ou un atomic write
+- Si tu hésites entre plusieurs approches, propose-les avec leurs
+  tradeoffs, je tranche
+- Tu peux référencer mes patterns existants (les Phases,
+  l'idempotence MD5, le watcher polling 60s, l'auto-restart 10s,
+  les manifestes JSON, etc.) — c'est du déjà vu pour moi, ça
+  économise de la rédaction
+- Quand un truc te semble macOS-only / Linux-only, vérifie deux
+  fois — l'écosystème Python sur Windows en 2026 a beaucoup
+  rattrapé. Si vraiment c'est bloquant, propose un wrapper/fork
+  plutôt que d'écarter d'office
+- Mon quota Max 5x est mon goulot. Mode "économe en tokens" par
+  défaut pour la phase de construction Claude Code (specs courtes,
+  bouts par bouts, contexte minimal). Mode verbeux réservé aux
+  pivots d'archi
+
+
+Fin du document. À lire de bout en bout au début de la conversation
+pour calibrer.

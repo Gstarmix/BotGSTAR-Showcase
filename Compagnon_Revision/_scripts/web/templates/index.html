@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compagnon de révision</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="layout">
+    <main id="dialogue">
+      <header id="dialogue-header">
+        <form id="start-form">
+          <span>Démarrer :</span>
+          <input name="matiere" placeholder="AN1" size="4" required>
+          <input name="type" placeholder="TD" size="4" required>
+          <input name="num" placeholder="5" size="3" required>
+          <input name="exo" placeholder="3" size="3" required>
+          <input name="enonce_path" placeholder="AN1/TD/AN1_TD5_enonce.pdf" required>
+          <button type="submit">Lancer</button>
+          <span id="session-info"></span>
+        </form>
+      </header>
+      <div id="dialogue-stream">
+        <p class="placeholder">Pas de session active. Renseigne les champs et clique Lancer.</p>
+      </div>
+      <footer id="dialogue-input">
+        <input id="user-input" type="text" placeholder="Réponse étudiant (en attendant l'audio push-to-talk)…" disabled>
+        <button id="send-btn" disabled>Envoyer</button>
+      </footer>
+    </main>
+    <aside id="sidebar">
+      <div id="quota-panel">
+        <h2>Quota Pro Max</h2>
+        <div id="quota-content">…</div>
+      </div>
+      <div id="record-indicator">Maintenir [Espace] pour parler</div>
+      <button id="end-session" disabled>Terminer la séance</button>
+    </aside>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

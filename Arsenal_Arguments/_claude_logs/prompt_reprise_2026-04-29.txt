@@ -1,0 +1,229 @@
+Bonjour. Je reprends la session Arsenal Intelligence Unit après la coupure de
+hier soir. Voici le contexte et ce qu'il reste à faire.
+
+## Contexte (synthèse de la veille — 28/04/2026 au soir)
+
+J'ai passé la soirée à corriger la logique de `Arsenal_Arguments/summarize.py`
+et à créer une GUI Tkinter (`summarize_gui.py` + `start_summarize_gui.vbs`)
+pour piloter le pipeline de résumés Sonnet sans ligne de commande.
+
+Tout est documenté en détail dans
+`Arsenal_Arguments/_claude_logs/session_2026-04-28.md` (sections "19:00-22:30
+Soirée debug" et "TODO demain"). Lis ce fichier avant toute action.
+
+État final hier soir :
+- Whisper ✅ / OCR ✅ / audit ✅ (351 transcripts, 545 OCR skips, audit OK)
+- Summarize : ~34/1197 faits puis Stop manuel via GUI (panne Anthropic massive
+  active depuis 17:41 UTC = 19:41 Paris, claude --print hangait).
+- 4 patches appliqués sur summarize.py : silence Carrousel, catch
+  KeyboardInterrupt + embed Discord "Interrompu", CREATE_NO_WINDOW pour les
+  pop-ups, drop --re-summarize de la commande standard.
+- GUI Tkinter complète + auto-restart + parsing coût live + 6 boutons
+  raccourcis (📂 summaries, 📊 audit, 🌐 #logs, 🩺 status Anthropic,
+  💳 console billing, 📈 claude.ai usage).
+
+## TODO 1 — Vérifier que la panne Anthropic est résolue
+
+- Ouvre https://status.claude.com et confirme que tous les services sont
+  "Operational" (pas de Major/Partial Outage).
+- Si oui : continue à la TODO 2. Si non : attends, et passe à la TODO 3
+  pendant ce temps.
+
+## TODO 2 — Relancer le batch summarize via la GUI
+
+- Double-clic sur `Arsenal_Arguments/start_summarize_gui.vbs`.
+- Vérifie les options par défaut :
+  - Moteur : Claude Code CLI (gratuit) ✅
+  - --re-summarize : DÉCOCHÉ (les 34 SUCCESS Sonnet seront skippés)
+  - Auto-restart : COCHÉ (max 10)
+- Clique ▶ Lancer.
+- Vérifie dans #logs Discord (1475955504332411187) que l'embed "Démarrage" se
+  poste, puis les premiers "X/Y" verts.
+- Vérifie qu'il n'y a PLUS de fenêtre console qui pop à chaque résumé
+  (fix CREATE_NO_WINDOW de hier).
+- Laisse tourner. Avec ~1500 résumés à ~50s chacun = ~21h. Auto-restart en cas
+  de crash.
+
+## TODO 3 — Implémenter le scraping de claude.ai/settings/usage
+
+User valide :
+- Stockage du cookie via **Windows DPAPI** (zéro mot de passe à retenir,
+  chiffré lié à la session Windows).
+- Affichage rafraîchi toutes les 60s dans la GUI à côté du coût cumulé.
+- Si format JSON inattendu : message orange dans la GUI + log embed Discord
+  warning, pas de crash.
+
+**Avant de coder**, demande à user de te fournir la requête API interne
+qu'il aura récupérée via DevTools (procédure expliquée hier soir : F12,
+onglet Network/Fetch-XHR, recharger /settings/usage, repérer les
+requêtes `claude.ai/api/...` JSON, copier l'URL et la structure de
+réponse en RETIRANT le cookie de la commande pour ne pas le mettre dans
+la conversation).
+
+Plan une fois l'endpoint connu :
+1. Créer `Arsenal_Arguments/claude_usage.py` :
+   - `save_cookie(value)` : chiffre via `win32crypt.CryptProtectData` et
+     écrit dans `Arsenal_Arguments/_secrets/claude_session.bin`
+   - `load_cookie()` : déchiffre et retourne la valeur claire (ou None)
+   - `fetch_usage()` : GET sur l'endpoint avec User-Agent navigateur réel,
+     parse le JSON, retourne dict normalisé
+     `{session_used, session_limit, weekly_used, weekly_limit, reset_at}`
+   - Gère gracieusement : cookie expiré (401), endpoint changé (KeyError →
+     message d'erreur explicite), réseau down (timeout 10s).
+2. Petite UI dans la GUI pour la 1ʳᵉ config : bouton "🔐 Configurer cookie
+   claude.ai" qui ouvre une dialog Toplevel demandant de coller le cookie
+   `sessionKey` (champ obscured `show="*"`).
+3. Thread périodique `root.after(60_000, _refresh_usage)` qui appelle
+   `fetch_usage()` et update un nouveau Label dans la GUI.
+4. Ajouter les deps dans le projet : `pip install pywin32` (fournit
+   win32crypt). pywin32 est probablement déjà installé via une autre lib,
+   à vérifier : `python -c "import win32crypt; print('OK')"`.
+
+**Test à faire après implémentation** :
+- Configurer cookie via la dialog.
+- Fermer/rouvrir la GUI : le cookie doit persister, refresh auto au boot.
+- Mettre un cookie volontairement invalide : la GUI doit afficher l'erreur
+  sans crasher.
+- Effacer le cookie : reset propre, retour à l'état "non configuré".
+
+## TODO 3bis — Garde-fous quota auto-stop (À FAIRE EN MÊME TEMPS QUE TODO 3)
+
+**Philosophie** : Arsenal ne doit pas bouffer 100 % du quota Pro Max au point
+de m'empêcher d'utiliser Claude Code pour autre chose.
+
+Deux seuils indépendants, configurables dans la GUI, avec valeurs par défaut
+sensées (à confirmer avec user) :
+
+### Seuil SESSION (défaut suggéré : 70 %)
+
+- Affichage : barre de progression "Session : XX % (Y h Zm avant reset)"
+  avec couleur dynamique :
+  - vert si < seuil - 20
+  - orange si entre seuil - 20 et seuil
+  - rouge si >= seuil
+- Quand `session_used / session_limit >= seuil` :
+  - Auto-Stop d'Arsenal (même chemin que clic Stop : Ctrl-Break → embed
+    Discord "Interrompu — quota session atteint" → release_lock).
+  - Flag `_throttle_session` activé en mémoire.
+  - **Auto-resume** : la GUI continue de poller le quota toutes les 60 s ;
+    quand le reset session est passé (timestamp `reset_at` dépassé OU
+    `session_used` redescendu), flag levé + relance auto si auto-restart
+    est coché.
+- L'utilisateur peut désactiver le throttle session manuellement (bouton
+  "Forcer continue malgré seuil" qui met le flag à False jusqu'au prochain
+  Stop manuel).
+
+### Seuil HEBDOMADAIRE (défaut suggéré : 80 %)
+
+- Affichage : barre de progression "Hebdo : XX % (J jours avant reset)".
+- Quand `weekly_used / weekly_limit >= seuil` :
+  - Auto-Stop d'Arsenal (même chemin que session).
+  - Flag `_throttle_weekly` activé **et PERSISTANT** : sauvegardé dans
+    `_secrets/quota_state.json` pour survivre à un restart de la GUI.
+  - Auto-restart **désactivé** tant que ce flag est levé.
+  - Bouton ▶ Lancer **disabled** avec tooltip "Limite hebdo X % atteinte,
+    réajuster le seuil ou attendre le reset (J jours)".
+  - Embed Discord rouge dans #logs : "🚨 Limite hebdo Arsenal atteinte
+    (XX % de YY %), pause forcée jusqu'au DD/MM ou réajustement manuel".
+- Pour reprendre, l'utilisateur doit explicitement :
+  - augmenter le seuil dans la GUI (slider qui déclenche un re-check), OU
+  - cliquer "Forcer reset throttle hebdo" (bouton rouge, demande
+    confirmation), OU
+  - attendre le reset auto (la GUI re-poll et lève le flag quand
+    `weekly_used / weekly_limit < seuil`).
+
+### Implémentation concrète à faire
+
+1. Étendre `claude_usage.py` avec un dataclass `Quota` :
+   ```python
+   @dataclass
+   class Quota:
+       session_used: int
+       session_limit: int
+       weekly_used: int
+       weekly_limit: int
+       session_reset_at: datetime
+       weekly_reset_at: datetime
+
+       @property
+       def session_pct(self) -> float: ...
+       @property
+       def weekly_pct(self) -> float: ...
+   ```
+2. Dans `summarize_gui.py`, ajouter une nouvelle frame "Quota Pro Max"
+   AVANT la frame "Console", contenant :
+   - 2 ttk.Progressbar (session + hebdo) avec label % + temps reset
+   - 2 Spinbox/Scale pour les seuils (session 0-100, hebdo 0-100), avec
+     persistance dans `_secrets/quota_state.json`
+   - Indicateur d'état du throttle (icône verte / orange / rouge)
+   - Bouton "Forcer reset throttle hebdo" (visible seulement si flag levé)
+3. Boucle de poll : `root.after(60_000, _refresh_quota_and_check)` qui :
+   - appelle `fetch_usage()`
+   - update les barres
+   - check les seuils et trigger auto-stop si dépassement
+   - update l'état du throttle persistant
+4. Persistance `_secrets/quota_state.json` (atomic write `.tmp + os.replace`) :
+   ```json
+   {
+     "session_threshold_pct": 70,
+     "weekly_threshold_pct": 80,
+     "weekly_throttled": false,
+     "weekly_throttled_at": null,
+     "last_check_at": "2026-04-29T08:00:00Z"
+   }
+   ```
+
+### Tests à faire
+
+- Mocker un quota à 71 % session pendant un run en cours → doit auto-stop.
+- Simuler reset session (modifier le JSON) → doit auto-resume.
+- Mocker un quota à 81 % hebdo → doit auto-stop ET désactiver Lancer.
+- Restart de la GUI : le throttle hebdo doit persister.
+- Bouton "Forcer reset throttle hebdo" → confirmation modale → flag levé →
+  Lancer ré-activé.
+
+## TODO 4 — Mettre à jour les CLAUDE.md
+
+Une fois la TODO 3 stable :
+
+1. **`BotGSTAR/CLAUDE.md` §13 (Arsenal Intelligence Unit)** :
+   - Ajouter sous-section "Workflow recommandé : GUI Tkinter
+     (`summarize_gui.py`)" avec mention du double-clic VBS, des 6 boutons
+     raccourcis, du parsing coût live, du scraping usage via DPAPI.
+   - Mentionner les 4 patches appliqués à `summarize.py` (silence Carrousel,
+     KeyboardInterrupt, CREATE_NO_WINDOW, drop --re-summarize de la
+     commande standard).
+
+2. **`Arsenal_Arguments/CLAUDE.md`** :
+   - Ajouter `summarize_gui.py` et `claude_usage.py` au tableau "Architecture
+     — Scripts pipeline".
+   - Ajouter `start_summarize_gui.vbs` + procédure double-clic.
+   - Mettre à jour la section "Tests rapides" avec
+     `wscript start_summarize_gui.vbs` comme entry point recommandé.
+
+3. **`BotGSTAR/README.md` portfolio** :
+   - Ajouter une mention de la GUI Arsenal dans la section outils/workflow.
+
+## TODO 5 (optionnel) — Cleanup
+
+- Les 2 vrais backups Gemini (`tous_les_resumes.txt.gemini_backup_17-52-28`
+  25 KB et `18-57-00` 6 KB) peuvent être archivés vers `_archives/` si plus
+  de migration prévue.
+- Le 1ᵉʳ vrai `tous_les_resumes.txt.gemini_backup_2026-04-28_17-52-28` est
+  daté du 15 avril dans le mtime — vérifier si c'est bien du Gemini ou du
+  Sonnet ancien, et le renommer si pertinent (ex: `sonnet_v1_backup_*`).
+
+## Règles de comportement (rappel)
+
+- Ne lance PAS `summarize.py` ni le bot Discord en CLI directement.
+  Utilise la GUI ou les watchers existants.
+- Ne modifie pas les fichiers source autres que ceux nécessaires aux TODO
+  ci-dessus.
+- Avant chaque modif de code : Read le fichier, modif chirurgicale via Edit,
+  syntax check (`python -c "import ast; ast.parse(open('X.py').read())"`).
+- En cas de doute : pose la question avant de coder.
+- Mets à jour `Arsenal_Arguments/_claude_logs/session_2026-04-29.md` (nouveau
+  fichier pour aujourd'hui) au fil de la session.
+
+Commence par TODO 1, puis 2, puis demande-moi la requête API DevTools pour
+TODO 3.

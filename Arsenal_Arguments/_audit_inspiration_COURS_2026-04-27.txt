@@ -1,0 +1,442 @@
+===============================================================================
+RAPPORT — Éléments du projet COURS réutilisables / inspirants pour Arsenal
+Date    : 2026-04-27
+Mode    : lecture seule, aucune modification effectuée
+Auteur  : Claude Code (analyse comparative)
+Sources : COURS/CLAUDE.md (1157 l.), COURS/_scripts/* (~30 scripts),
+          BotGSTAR/Arsenal_Arguments/CLAUDE.md (193 l.)
+===============================================================================
+
+CONTEXTE — Les deux projets en une phrase
+-------------------------------------------------------------------------------
+- COURS   : pipeline pédagogique L1 ISTIC (audio → transcription → résumé PDF
+            → publication Discord par forum/thread, 5 matières, ~24 commandes
+            !cours, watchers async, tracking JSON atomique).
+- Arsenal : pipeline veille politique (téléchargement TikTok/IG → transcription
+            Whisper → résumé Claude → publication Discord, CSV central comme
+            source de vérité, ~3 commandes !arsenal).
+
+Stack commun :
+- Python 3.12 + discord.py (cogs/extensions)
+- faster-whisper large-v3 sur RTX 2060 (CUDA int8_float16)
+- API Anthropic Claude pour résumés
+- yt-dlp / Whisper / cogs Discord
+
+Les deux ont déjà beaucoup en commun. Le rapport ci-dessous liste UNIQUEMENT
+ce qui existe côté COURS et qui n'a pas (ou pas en aussi mature) d'équivalent
+côté Arsenal. Verdict + priorité indiquée pour chaque item.
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+1. ÉCONOMIES API — passage au CLI subscription Claude
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : _scripts/summarize.py + BotGSTAR/extensions/cours_pipeline.py
+                Phase L (27/04). Constat : "API Anthropic épuisée".
+
+Pattern :
+    env = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}
+    proc = subprocess.run(
+        ["claude", "--print"],
+        input=prompt_text, capture_output=True, text=True, env=env, ...
+    )
+    return proc.stdout.strip()
+
+Idée : forcer le CLI Claude (abonnement Pro/Max) au lieu de l'API payante en
+       UNSET-ant ANTHROPIC_API_KEY dans le sub-process. Coût = 0 €.
+
+Impact Arsenal :
+- summarize.py appelle aujourd'hui anthropic.Anthropic() → facturé.
+- Même pattern applicable, à condition d'accepter de perdre :
+    a) le tracking de tokens (le CLI ne les expose pas) ;
+    b) le multimodal vision (le CLI --print ne prend pas d'images en input).
+  → applicable seulement aux contenus TEXT-ONLY (vidéos avec transcription
+    seule, pas les carrousels d'images).
+- Solution mixte recommandée : CLI subscription pour les vidéos pures, API
+  payante pour les carrousels (qui sont la minorité).
+
+PRIORITÉ : HAUTE (économies directes, ~80% du volume = vidéos = text-only).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+2. ATOMICITÉ DES ÉCRITURES (JSON / CSV)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : load_discord_published_v2() / save_discord_published_v2()
+                + _published.json, _absences.json, discord_perso_published.json.
+                Pattern systématique : .tmp + os.replace().
+
+Constat Arsenal (CLAUDE.md, "Pièges connus") :
+    "CSV concurrence : aucun lock inter-processus. Ne pas lancer deux scripts
+     qui écrivent le CSV en même temps."
+
+Idée : remplacer les pd.to_csv(...) par une écriture atomique :
+    df.to_csv(path + ".tmp", encoding="utf-8-sig", ...)
+    os.replace(path + ".tmp", path)
+    + acquire_lock("csv.lock") avec check PID-alive.
+
+Bonus : COURS ajoute aussi des backups horodatés avant chaque modif lourde
+(rss_state.json.bak.YYYYMMDD-HHMMSS). Arsenal a déjà cfg.backup_csv("label")
+mais l'écriture elle-même n'est pas atomique.
+
+PRIORITÉ : MOYENNE (panne rare mais catastrophique si elle arrive — le CSV
+           est la source de vérité de tout le pipeline Arsenal).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+3. IDEMPOTENCE PAR MD5
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : tous les _do_publish_* (correction, énoncé, perso) sont
+                idempotents par MD5. Si le fichier n'a pas changé →
+                skip_same_md5. Si le fichier a changé → ancien message
+                Discord supprimé + repost avec préfixe "🔄 Version N".
+                Historique versions[] conservé dans le JSON.
+
+Constat Arsenal : sync_status PENDING/SUCCESS/FAILED, mais pas de hash de
+contenu. Re-uploader un résumé corrigé exige un --re-summarize manuel et
+ne purge pas l'ancien message Discord.
+
+Idée : ajouter une colonne `summary_md5` au CSV ; à la republication,
+       détecter le diff MD5 → delete + repost + log "🔄 résumé révisé".
+       Permet le hot-reload des résumés sans purger tout le forum.
+
+PRIORITÉ : MOYENNE (qualité de vie pour la phase d'itération sur les prompts).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+4. WATCHER + PUBLISH-QUEUE (manifests JSON)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase L. transcribe.py / summarize.py n'appellent JAMAIS
+                Discord directement. Ils déposent un manifest JSON dans
+                COURS/_publish_queue/*.json :
+                    {kind, matiere, title, files: [{path, label, kind}, ...]}
+                Le bot a un @tasks.loop(seconds=60) `_publish_queue_watcher`
+                qui scanne, crée le thread, poste les fichiers, archive le
+                manifest sous _publish_queue/_done/.
+
+Avantage : découplage total. Le script de génération peut tourner offline,
+le bot peut être down 3 jours, dès qu'il revient il rattrape la queue.
+Plus aucun script n'a besoin d'auth Discord ni du token bot.
+
+Constat Arsenal : !sync_arsenal est invoqué manuellement par Gaylord dans
+Discord. Si Gaylord oublie, les résumés s'empilent dans 03_ai_summaries/
+sans atterrir dans les forums. Pas de file d'attente persistante.
+
+Idée : substituer un `Arsenal_Arguments/_publish_queue/` au CSV pour le
+       trigger Discord. À la fin de summarize.py → drop manifest → cog
+       arsenal_publisher tâche-loop le ramasse en 60 s.
+
+PRIORITÉ : HAUTE (élimine un point de friction quotidien).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+5. AUTO-START + TRAY WATCHDOG (bot_tray.py + start_tray.vbs)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase S (26/04). bot_tray.py spawn `python -u bot.py` en
+                subprocess sans console (CREATE_NO_WINDOW), capture
+                stdout/stderr → log + buffer mémoire (deque maxlen=4000).
+                - Auto-restart 10 s après crash.
+                - Icône tray colorée par état (vert/orange/rouge/bleu).
+                - Menu clic droit : voir logs Tk (auto-scroll), pause,
+                  redémarrer, autostart Windows toggle, quitter.
+                - start_tray.vbs : lanceur silencieux pythonw.exe.
+                - Auto-démarrage Windows : écrit BotGSTAR_Tray.vbs dans
+                  %APPDATA%\...\Startup\.
+
+Constat Arsenal : pipeline lancé à la main, pas de daemon, pas de
+restart auto, pas de monitoring d'état.
+
+Idée : Arsenal n'est pas un service permanent (déclenchements ponctuels
+       par Gaylord). Mais un "Arsenal tray" pourrait surveiller les locks
+       _locks/summarizer.lock et lancer le pipeline en 1 clic
+       (download → normalize → transcribe → summarize → enqueue).
+
+PRIORITÉ : BASSE (Arsenal est par nature batch, pas service. À garder
+           dans les inspirations long terme si Gaylord automatise plus).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+6. PRE-HOOK VALIDATION DES INPUTS (check_tache.py, check_script.py)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : check_tache.py valide les TACHE_*.md AVANT que
+                run_correction.py ne tente la génération PDF. Détecte
+                8 patterns cassés (R19, R28, R30…). Flag --skip-check
+                pour bypass. Intégré directement dans run_correction.py.
+
+Idée : Arsenal n'a aucun pre-check sur les transcriptions Whisper avant
+       de les envoyer au summarizer. Cas d'usage typiques :
+       - transcription vide ou < 50 caractères → skip + log warning ;
+       - transcription contient majoritairement "Sous-titres réalisés
+         par la communauté Amara.org" → skip (parasite Whisper connu) ;
+       - hashtags/description mais aucun audio → flag manuel.
+       Ces cas existent réellement dans 02_whisper_transcripts/.
+
+PRIORITÉ : MOYENNE (évite des appels API gaspillés sur des transcriptions
+           vides ou garbage).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+7. AUTO-DÉSACTIVATION SOURCE APRÈS N ERREURS (Phase R, veille_rss)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : SOURCE_ERROR_THRESHOLD = 5. Après 5 erreurs consécutives
+                sur un flux RSS, la source est désactivée en mémoire +
+                log embed orange dans #logs. Le YAML reste actif (Gaylord
+                décide), mais le runtime arrête de la spammer.
+
+Constat Arsenal : si un compte TikTok/IG devient privé ou ban, dl_*.py
+échoue à chaque tentative. Pas de tracking error_count par source/user.
+
+Idée : ajouter `consecutive_error_count` par username dans le CSV (ou
+       un fichier auxiliaire arsenal_sources_state.json). Au-delà d'un
+       seuil → flag "ASLEEP" → skip silencieux + alerte Discord 1×.
+
+PRIORITÉ : BASSE (utile seulement si Arsenal scrape récurrent par user,
+           ce que le code actuel ne semble pas faire).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+8. SESSION LOGS HORODATÉS (_audit/sessions/)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase M (27/04, "RÈGLE — LOGGING SYSTÉMATIQUE EN MODE
+                AUTONOME"). Chaque session non-triviale ouvre un fichier
+                COURS/_audit/sessions/YYYY-MM-DD_<slug>.md avec frontmatter
+                (session, started, goal, inputs, status), tenu à jour
+                après chaque étape majeure avec horodatage [HH:MM].
+                INDEX.md liste tout. Embed récap final dans #logs Discord.
+
+Constat Arsenal : logs via get_logger() OK, mais pas de session.md
+récapitulatif. Difficile de retrouver "qu'est-ce que j'ai changé le 14/04"
+sans fouiller git + logs.
+
+Idée : pas critique pour Arsenal puisque le CSV trace tout (chaque ligne
+       a un timestamp). Mais si Gaylord travaille en mode autonome avec
+       Claude Code sur Arsenal, la même règle s'applique.
+
+PRIORITÉ : INFO (à activer si Gaylord adopte le mode autonome côté
+           Arsenal).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+9. SCAN MANUEL + CONFIRM POUR OPÉRATIONS DESTRUCTIVES (!cours backfill)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : !cours backfill an1 affiche un dry-run embed (X corrections
+                seraient publiées, Y déjà publiées seront skip MD5) puis
+                attend la réaction ✅ de Gaylord. !cours sources remove
+                idem avec timeout 30 s.
+
+Constat Arsenal : !clear_arsenal "purge tous les forums + reset
+sync_status" est documenté mais (à vérifier) probablement sans confirm.
+Une fausse manip détruirait l'historique Discord.
+
+Idée : ajouter le pattern dry-run + reaction confirm sur !clear_arsenal.
+
+PRIORITÉ : MOYENNE (filet de sécurité bas coût).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+10. FORMAT D'EMBEDS DISCORD CODÉS PAR ÉTAT
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : convention systématique sur #logs :
+                vert = OK / orange = warning / rouge = erreur / gris = info.
+                Footer "Pipeline COURS". Couleur par matière/statut.
+                Cog veille_rss : digest matinal 8h00 Paris avec 4 catégories
+                couleurs distinctes (cyber/ia/dev/tech) + emoji par source.
+
+Constat Arsenal : !stats_arsenal affiche des compteurs, mais pas de
+convention de couleurs ni récap quotidien.
+
+Idée : reprendre le pattern d'embed digest quotidien pour Arsenal
+       (résumé des contenus nouveaux dans les dernières 24 h). Réutiliser
+       directement l'architecture veille_rss._run_daily_cycle() en
+       l'adaptant au CSV Arsenal.
+
+PRIORITÉ : BASSE (cosmétique).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+11. SPLIT INTELLIGENT DES MESSAGES > LIMITE DISCORD
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : veille_rss.py — cap dur 5 embeds par catégorie + description
+                ≤ 3900 chars/embed pour rester sous la limite Discord 4096.
+                Style A v3 : titre uniquement sur 1er embed, image spacer
+                730×1 transparente pour uniformiser la largeur.
+
+Constat Arsenal : "Discord upload limit : 10 Mo max par fichier. Les médias
+plus gros sont ignorés." → pas de fallback. COURS gère les fichiers > 25 Mo
+en postant un embed "trop lourd, conservé localement" avec lien vers le
+fichier source.
+
+Idée : remplacer le silent-skip Arsenal par un embed "Vidéo trop lourde,
+       cliquez ici pour récupérer en local : <chemin>".
+
+PRIORITÉ : MOYENNE (évite des contenus invisibles côté Discord).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+12. RÉCONCILIATION THREAD/MESSAGE SUPPRIMÉ MANUELLEMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : si un thread Discord est supprimé manuellement, le prochain
+                _ensure_*_thread() détecte le 404 lors du fetch_channel,
+                purge l'entrée JSON, et recrée le thread.
+
+Constat Arsenal : si Gaylord supprime un message dans le forum politique,
+le sync_status reste SUCCESS dans le CSV → jamais re-publié. Pas de
+réconciliation.
+
+Idée : à chaque !sync_arsenal, vérifier que les message_id côté CSV
+       existent encore. Si 404 → reset sync_status à PENDING.
+
+PRIORITÉ : BASSE (cas d'usage rare).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+13. delete-after SUR INBOX DISCORD
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase O+ (27/04). Salons inbox-{mat} privés. Le bot
+                supprime le message Discord après avoir téléchargé +
+                tracké l'attachment (anti-doublon par MD5 dans
+                discord_attachments_processed.json). Avantage : vue claire
+                de ce qui reste à traiter.
+
+Idée : Arsenal pourrait avoir un canal "URLs à analyser" où Gaylord drop
+       des liens TikTok/IG depuis son tél. Le bot lit, télécharge,
+       supprime le message après ingestion. Plus pratique que de
+       maintenir une liste à part.
+
+PRIORITÉ : INFO (changement de workflow utilisateur, pas juste technique).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+14. MODULES PARTAGÉS : pdf_base.py-style ↔ arsenal_config.py
+═══════════════════════════════════════════════════════════════════════════════
+
+Constat : Arsenal a déjà un module centralisé `arsenal_config.py` (cfg,
+ScriptResult, get_logger, append_to_csv, GLOBAL_CSV_COLUMNS). C'est
+exactement la philosophie de pdf_base.py côté COURS.
+
+→ Sur ce point, Arsenal est déjà au niveau ou plus mature que COURS.
+  Aucune amélioration à tirer ici.
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+15. AUTO-DÉTECTION GPU CUDA
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : transcribe.py via ctranslate2.get_cuda_device_count().
+                CUDA si dispo (compute_type int8_float16, RTX 2060 testée),
+                CPU fallback (int8). Auto-fallback transparent.
+
+Constat Arsenal : whisper_engine.ps1 + arsenal_transcribe.ps1 sont en
+PowerShell. À vérifier (non exploré ici) si l'auto-détection est aussi
+robuste. Probablement déjà OK car la stack Arsenal est plus ancienne et
+testée que COURS sur ce point.
+
+PRIORITÉ : INFO (vérification ponctuelle si bug GPU constaté).
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+16. _HeadlessCtx — INVOQUER UNE COMMANDE BOT EN INTERNE
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase K. _HeadlessCtx est un faux discord.Context (no-op
+                send) qui permet d'appeler une commande bot depuis un
+                listener (ex: _auto_publish_cm dans le watchdog _INBOX
+                déclenche _publish_classic comme si Gaylord avait tapé
+                !cours publish).
+
+Idée : utile uniquement si Arsenal veut chaîner des commandes en interne
+       (ex: !sync_arsenal déclenche un !stats_arsenal automatique à la
+       fin). Marginal.
+
+PRIORITÉ : INFO.
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+17. SUPPORT MULTI-VERSIONS PARALLÈLES (suffixe _inference / _transcription)
+═══════════════════════════════════════════════════════════════════════════════
+
+Source COURS  : Phase N+. Quand un SCRIPT/slides est généré AVANT
+                l'audio prof, suffixe _inference. À l'arrivée de l'audio,
+                création série _transcription côte à côte. Les deux
+                versions cohabitent.
+
+Constat Arsenal : pas pertinent — Arsenal travaille en post-fact (la vidéo
+existe déjà). Pas d'équivalent "pré/post-source".
+
+PRIORITÉ : NON APPLICABLE.
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+RÉCAPITULATIF DES PRIORITÉS
+═══════════════════════════════════════════════════════════════════════════════
+
+HAUTE (à traiter en priorité, gain direct) :
+  #1  CLI subscription Claude pour les résumés text-only      → économies €
+  #4  Watcher + publish-queue manifests                       → friction quotidienne
+
+MOYENNE (filets de sécurité, qualité de vie) :
+  #2  Atomicité écriture CSV (.tmp + os.replace + lock)       → perte de données
+  #3  Idempotence MD5 sur résumés (versioning)                → itération prompts
+  #6  Pre-check transcriptions vides/garbage                  → API calls gaspillés
+  #9  Dry-run + confirm sur !clear_arsenal                    → opération destructive
+  #11 Embed "fichier trop lourd" au lieu de silent-skip       → contenus invisibles
+
+BASSE / INFO (à garder en tête) :
+  #5  Tray watchdog + autostart Windows
+  #7  Auto-désactivation source après N erreurs
+  #8  Session logs horodatés _audit/sessions/
+  #10 Convention couleurs embeds + digest quotidien
+  #12 Réconciliation messages supprimés
+  #13 delete-after sur inbox Discord
+  #15 Auto-détection GPU vérifier
+  #16 _HeadlessCtx pour chaînage interne
+
+NON APPLICABLE :
+  #14 Modules partagés (Arsenal déjà au niveau)
+  #17 Versions parallèles _inference/_transcription
+
+
+
+═══════════════════════════════════════════════════════════════════════════════
+NOTES MÉTHODO
+═══════════════════════════════════════════════════════════════════════════════
+- Lecture intégrale : COURS/CLAUDE.md (1157 lignes), Arsenal/CLAUDE.md (193 l.).
+- Parcours complet via Glob de COURS/_scripts/ (~30 fichiers identifiés,
+  plusieurs pyc et tests). Lecture détaillée des scripts les plus pertinents
+  pour la comparaison : transcribe.py, summarize.py.
+- Lecture détaillée de Arsenal/summarize.py pour comparer le pattern d'appel
+  Claude API.
+- Aucune modification effectuée sur aucun des deux projets.
+
+===============================================================================
+FIN DU RAPPORT
+===============================================================================

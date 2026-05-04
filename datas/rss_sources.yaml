@@ -1,0 +1,164 @@
+# Configuration des sources RSS pour BotGSTAR veille
+# Format YAML — éditable manuellement, rechargé via !veille reload
+# Champs obligatoires : id (unique), url, category, language, priority, active
+# category : cyber | ia | dev | tech
+# priority : 1 (top) | 2 (medium) | 3 (low)
+
+# === CYBER ===
+- id: cert-fr
+  url: https://www.cert.ssi.gouv.fr/feed/
+  category: cyber
+  language: fr
+  priority: 1
+  active: true
+  notes: "CERT-FR officiel — alertes critiques ANSSI"
+
+- id: krebs
+  url: https://krebsonsecurity.com/feed/
+  category: cyber
+  language: en
+  priority: 1
+  active: true
+  notes: Krebs on Security — référence cyber, recommandé par le prof
+
+- id: hackernews-cyber
+  url: https://feeds.feedburner.com/TheHackersNews
+  category: cyber
+  language: en
+  priority: 2
+  active: true
+  notes: The Hacker News — gros volume, blacklist Webinar pour filtrer
+
+# === IA ===
+- id: bleepingcomputer
+  url: https://www.bleepingcomputer.com/feed/
+  category: cyber
+  language: en
+  priority: 1
+  active: true
+  notes: Ajouté via !veille sources add le 2026-04-26
+- id: zataz
+  url: https://www.zataz.com/feed/
+  category: cyber
+  language: en
+  priority: 2
+  active: true
+  notes: Ajouté via !veille sources add le 2026-04-26
+- id: anthropic-news
+  url: https://rsshub.rssforever.com/anthropic/news
+  category: ia
+  language: en
+  priority: 1
+  active: true
+  notes: "Anthropic News via miroir RSSHub (rsshub.app en 403, miroir communautaire)"
+
+- id: openai-news
+  url: https://openai.com/news/rss.xml
+  category: ia
+  language: en
+  priority: 1
+  active: true
+  notes: "OpenAI News officiel — annonces produits ChatGPT/GPT"
+
+- id: huggingface-blog
+  url: https://huggingface.co/blog/feed.xml
+  category: ia
+  language: en
+  priority: 2
+  active: true
+  notes: "Hugging Face Blog — modèles open-source, datasets"
+
+- id: actuia
+  url: https://www.actuia.com/feed/
+  category: ia
+  language: fr
+  priority: 2
+  active: true
+  notes: "ActuIA — actualité IA en français"
+
+# === DEV ===
+- id: github-blog
+  url: https://github.blog/feed/
+  category: dev
+  language: en
+  priority: 1
+  active: true
+  notes: "Annonces plateforme GitHub + supply chain"
+
+- id: stackoverflow-blog
+  url: https://stackoverflow.blog/feed/
+  category: dev
+  language: en
+  priority: 2
+  active: true
+  notes: Stack Overflow Blog — tendances dev, articles techniques
+
+- id: realpython
+  url: https://realpython.com/atom.xml
+  category: dev
+  language: en
+  priority: 2
+  active: true
+  notes: Real Python — tutoriels et news Python, cohérent avec stack BotGSTAR
+
+- id: journalduhacker
+  url: https://www.journalduhacker.net/rss
+  category: dev
+  language: fr
+  priority: 2
+  active: true
+  notes: Journal du Hacker — Hacker News à la française
+
+- id: hnrss
+  url: https://hnrss.org/frontpage
+  category: dev
+  language: en
+  priority: 3
+  active: true
+  notes: Hacker News frontpage — volume énorme, prio 3 pour modérer
+
+- id: linuxfr
+  url: https://linuxfr.org/news.atom
+  category: dev
+  language: fr
+  priority: 3
+  active: true
+  notes: LinuxFr — écosystème libre et Linux FR, faible volume
+
+# === TECH ===
+- id: numerama
+  url: https://www.numerama.com/feed/
+  category: tech
+  language: fr
+  priority: 1
+  active: true
+  notes: "Tech grand public FR"
+
+- id: next-ink
+  url: https://next.ink/feed/
+  category: tech
+  language: fr
+  priority: 1
+  active: true
+  notes: Next.ink (ex-Next INpact) — tech FR rigoureuse
+- id: arstechnica
+  url: https://feeds.arstechnica.com/arstechnica/index
+  category: tech
+  language: en
+  priority: 2
+  active: true
+  notes: Ajouté via !veille sources add le 2026-04-26
+- id: korben
+  url: https://korben.info/feed
+  category: tech
+  language: en
+  priority: 3
+  active: true
+  notes: Ajouté via !veille sources add le 2026-04-26
+- id: frandroid
+  url: https://www.frandroid.com/feed
+  category: tech
+  language: en
+  priority: 3
+  active: true
+  notes: Ajouté via !veille sources add le 2026-04-26

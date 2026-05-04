@@ -1,0 +1,14 @@
+# Données runtime — jamais commit
+_sessions/
+_secrets/
+_logs/
+_cache/
+_photos_inbox/
+_points_faibles/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/

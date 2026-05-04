@@ -1,0 +1,98 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+extensions/channel_visibility_manager.py
+extensions/command_check.py
+extensions/commands_config.json
+extensions/emoji_changer.py
+extensions/family_choices.json
+extensions/faq_mudae_1.py
+extensions/faq_mudae_2.py
+extensions/inscription.py
+extensions/last_messages.json
+extensions/mudae_info_scheduler.json
+extensions/mudae_info_scheduler.py
+extensions/mudae_role_manager.py
+extensions/presentation.py
+extensions/presentation_messages.json
+extensions/previous_presentations.json
+extensions/role_management.py
+extensions/saved_presentations.json
+extensions/timeout_handler.py
+extensions/timeout2.py
+extensions/watch.py
+
+# Arsenal pipeline — données locales
+_archived/
+Arsenal_Arguments/_backups/
+Arsenal_Arguments/_locks/
+Arsenal_Arguments/_archives/
+Arsenal_Arguments/01_raw_videos/
+Arsenal_Arguments/01_raw_images/
+Arsenal_Arguments/02_whisper_transcripts/
+Arsenal_Arguments/02_whisper_transcripts_carousels/
+Arsenal_Arguments/03_ai_summaries/
+Arsenal_Arguments/tous_les_resumes.txt
+Arsenal_Arguments/tous_les_resumes.txt.*
+
+# Secrets / cookies sensibles (jamais committer)
+Arsenal_Arguments/_secrets/
+Arsenal_Arguments/cookies_instagram.txt
+Arsenal_Arguments/cookies_tiktok.txt
+Arsenal_Arguments/.env
+
+# Logs et caches
+Arsenal_Arguments/_claude_logs/tasks/
+Arsenal_Arguments/_corrupted_videos/
+Arsenal_Arguments/02_whisper_logs/
+Arsenal_Arguments/02_whisper_logsvideos/
+Arsenal_Arguments/04_exports/
+Arsenal_Arguments/whisper_run.log
+Arsenal_Arguments/whisper_run_v2.log
+Arsenal_Arguments/whisper_monitor.log
+*.bak
+*.bak.*
+suivi_global_*.csv
+
+# Claude Code runtime locale (ne pas committer la config user)
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
+.claude/projects/
+
+# Logs temporaires
+*.log.tmp
+
+# Binaires (yt-dlp etc — installable via pip ou téléchargeables)
+*.exe
+Arsenal_Arguments/yt-dlp.exe
+
+# Environnements Python virtuels (ne JAMAIS committer)
+.venv/
+venv/
+env/
+**/.venv/
+**/venv/
+
+# Node / éditeurs
+node_modules/
+.idea/
+.vscode/
+*.swp
+
+# Bases de données / dumps
+*.sqlite
+*.sqlite3
+*.db
+dumps/
+threads_data.json
+
+# Données runtime spécifiques
+Arsenal_Arguments/dl_insta_video_image.json
+Arsenal_Arguments/dl_insta_video_image.html
+
+# Le suivi_global.csv lui-même n'est pas un secret mais c'est un état runtime
+# qui change tout le temps — le commit n'a pas vraiment de sens, on le track
+# ou pas selon ta préférence. Pour ce commit on l'inclut tel quel pour que
+# l'état (download/summary/sync per ligne) soit reproductible.
